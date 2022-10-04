@@ -12,7 +12,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'standard-with-typescript',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended'
   ],
   overrides: [
   ],
@@ -27,6 +28,7 @@ module.exports = {
     tsconfigRootDir: __dirname
   },
   plugins: [
+    'prettier',
     'react',
     '@typescript-eslint'
   ],
