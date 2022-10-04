@@ -39,7 +39,7 @@
   "main": "src/main.tsx",
   "repository": {
     "type": "git",
-    "url" :"https://github.com/skyclouds2001/vite-react-template-sky.git"
+    "url": "https://github.com/skyclouds2001/vite-react-template-sky.git"
   },
   "scripts": {
     "dev": "vite",
@@ -47,6 +47,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
