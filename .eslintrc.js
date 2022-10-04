@@ -1,8 +1,12 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
     es2021: true,
-    node: true
+    node: true,
+    commonjs: true,
+    'shared-node-browser': true,
+    worker: true
   },
   extends: [
     'eslint:recommended',
@@ -18,7 +22,9 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true
-    }
+    },
+    project: './tsconfig.json',
+    tsconfigRootDir: __dirname
   },
   plugins: [
     'react',
