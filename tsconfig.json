@@ -16,8 +16,13 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src/**/*", "vite.config.ts", ".eslintrc.js",
-    "prettierrc.js"
+  "include": [
+    "src/**/*",
+    "vite.config.ts",
+    ".eslintrc.js",
+    "prettierrc.js",
+    ".commitlintrc.js",
+    ".lintstagedrc.js"
   ],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
