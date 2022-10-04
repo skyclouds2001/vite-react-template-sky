@@ -6,14 +6,14 @@ module.exports = {
     node: true,
     commonjs: true,
     'shared-node-browser': true,
-    worker: true,
+    worker: true
   },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
     'standard-with-typescript',
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
+    'plugin:prettier/recommended'
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
@@ -21,11 +21,11 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     project: ['tsconfig.json'],
-    tsconfigRootDir: __dirname,
+    tsconfigRootDir: __dirname
   },
   plugins: ['prettier', 'react', '@typescript-eslint'],
-  rules: {},
+  rules: {}
 }
