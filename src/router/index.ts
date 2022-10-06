@@ -1,4 +1,4 @@
-import Main from '@/views/main'
+import Main from '@/pages/main'
 
 interface Route {
   path: string
