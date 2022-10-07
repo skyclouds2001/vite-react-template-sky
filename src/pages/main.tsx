@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setCounter } from '@/store/modules/main'
+import { RootStore } from '@/store'
 
 export default function Main(): JSX.Element {
   const dispatch = useDispatch()
 
-  const { counter } = useSelector((store: any) => store.main)
+  const { counter } = useSelector((store: RootStore) => store.main)
 
   const [value, setValue] = useState(counter)
 
@@ -17,7 +18,7 @@ export default function Main(): JSX.Element {
     <div>
       <span>Main</span>
       <div>
-        <input value={value} onChange={e => setValue(e.target.value)} />
+        <input value={value} onChange={e => setValue(parseInt(e.target.value))} />
         <button onClick={() => dispatch(setCounter({ counter: value }))}>保存</button>
       </div>
     </div>
