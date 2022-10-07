@@ -24,9 +24,12 @@
     "src/**/*",
     "vite.config.ts",
     ".eslintrc.js",
-    "prettierrc.js",
+    ".prettierrc.js",
     ".commitlintrc.js",
-    ".lintstagedrc.js"
+    ".lintstagedrc.js",
+    ".postcssrc.js",
+    ".stylelintrc.js",
+    "tailwind.config.js"
   ],
   "exclude": ["node_modules", "dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
