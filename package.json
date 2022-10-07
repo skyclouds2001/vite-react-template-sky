@@ -47,16 +47,17 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
     "antd": "^4.23.4",
     "axios": "^0.27.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.4",
     "react-router-dom": "^6.4.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
-    "@reduxjs/toolkit": "^1.8.5",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.2",
@@ -83,7 +84,6 @@
     "lint-staged": "^13.0.3",
     "postcss-import": "^15.0.0",
     "prettier": "^2.7.1",
-    "react-redux": "^8.0.4",
     "sass": "^1.55.0",
     "stylelint": "^14.13.0",
     "stylelint-config-prettier": "^9.0.3",
