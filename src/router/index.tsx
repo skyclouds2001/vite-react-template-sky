@@ -1,3 +1,4 @@
+import React from 'react'
 import Main from '@/pages/main'
 
 interface Route {
@@ -8,7 +9,7 @@ interface Route {
 const routes: Route[] = [
   {
     path: '/',
-    component: Main()
+    component: <Main />
   }
 ]
 
