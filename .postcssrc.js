@@ -3,5 +3,5 @@ const cssnano = require('cssnano')
 const tailwindcss = require('tailwindcss')
 
 module.exports = {
-  plugins: [tailwindcss, autoprefixer, cssnano]
+  plugins: [require('postcss-import'), tailwindcss, autoprefixer, cssnano]
 }
