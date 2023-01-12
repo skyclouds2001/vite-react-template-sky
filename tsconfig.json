@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext", "WebWorker"],
+    "lib": ["DOM", "ESNext", "WebWorker"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": false,
@@ -16,21 +16,11 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": ".",
+    "types": ["vite/client"],
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "src/*",
-    "src/**/*",
-    "vite.config.ts",
-    ".eslintrc.js",
-    ".prettierrc.js",
-    ".commitlintrc.js",
-    ".lintstagedrc.js",
-    ".postcssrc.js",
-    ".stylelintrc.js",
-    "tailwind.config.js"
-  ],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }

@@ -2,19 +2,13 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    es2021: true,
+    es2022: true,
     node: true,
     commonjs: true,
     'shared-node-browser': true,
     worker: true
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'standard-with-typescript',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended'
-  ],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'standard-with-typescript', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
   overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -27,5 +21,6 @@ module.exports = {
     tsconfigRootDir: __dirname
   },
   plugins: ['prettier', 'react', '@typescript-eslint'],
-  rules: {}
+  rules: {},
+  ignorePatterns: ['vite.config.ts', '.eslintrc.js', '.prettierrc.js', '.stylelintrc.js', '.commitlintrc.js', '.lintstagedrc.js', '.postcssrc.js', 'tailwind.config.js']
 }
