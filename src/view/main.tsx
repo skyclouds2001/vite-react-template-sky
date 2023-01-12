@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { PlusOutlined } from '@ant-design/icons'
 import { setCounter } from '@/store/modules/main'
 import { RootStore } from '@/store'
-import { PlusOutlined } from '@ant-design/icons'
 
-export default function Main(): JSX.Element {
+const Main: React.FC = () => {
   const dispatch = useDispatch()
 
   const { counter } = useSelector((store: RootStore) => store.main)
@@ -26,3 +26,5 @@ export default function Main(): JSX.Element {
     </div>
   )
 }
+
+export default Main

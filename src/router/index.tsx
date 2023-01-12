@@ -1,16 +1,15 @@
-import React from 'react'
-import Main from '@/pages/main'
+import React, { lazy } from 'react'
+import { useRoutes } from 'react-router-dom'
 
-interface Route {
-  path: string
-  component: JSX.Element
+const Main = lazy(() => import('@/view/main'))
+
+const Router: React.FC = () => {
+  return useRoutes([
+    {
+      path: '/',
+      element: <Main />
+    }
+  ])
 }
 
-const routes: Route[] = [
-  {
-    path: '/',
-    component: <Main />
-  }
-]
-
-export default routes
+export default Router
