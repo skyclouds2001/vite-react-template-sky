@@ -7,7 +7,7 @@ export interface MainState {
 
 const initialState: MainState = {
   counter: 0,
-  title: 'redux toolkit pre'
+  title: 'redux toolkit pre',
 }
 
 export const main = createSlice({
@@ -18,8 +18,8 @@ export const main = createSlice({
   reducers: {
     setCounter(state, { payload }) {
       state.counter = payload.counter
-    }
-  }
+    },
+  },
 })
 
 export const { setCounter } = main.actions

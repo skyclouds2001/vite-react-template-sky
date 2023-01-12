@@ -4,8 +4,8 @@ import { MainState } from '@/store/modules/main'
 
 export default configureStore({
   reducer: {
-    ...reducer
-  }
+    ...reducer,
+  },
 })
 
 export interface RootStore {

@@ -7,8 +7,8 @@ const Router: React.FC = () => {
   return useRoutes([
     {
       path: '/',
-      element: <Main />
-    }
+      element: <Main />,
+    },
   ])
 }
 

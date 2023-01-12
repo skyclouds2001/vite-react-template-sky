@@ -3,7 +3,7 @@ module.exports = {
   useTabs: false,
   singleQuote: true,
   semi: false,
-  trailingComma: 'all',
+  trailingComma: 'es5',
   bracketSpacing: true,
   arrowParens: 'avoid',
 }
