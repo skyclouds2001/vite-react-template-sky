@@ -9,11 +9,11 @@ export default defineConfig({
   plugins: [react(), legacy(), eslint(), stylelint()],
   css: {
     postcss: '.postcssrc.js',
-    devSourcemap: true
+    devSourcemap: true,
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src/')
-    }
-  }
+      '@': path.resolve(__dirname, './src/'),
+    },
+  },
 })
