@@ -1,18 +1,19 @@
 import axios from 'axios'
+import { SERVER_HOST } from '@/config'
 
 const instance = axios.create({
-  baseURL: 'http://localhost',
+  baseURL: SERVER_HOST,
   timeout: 10000
 })
 
 instance.interceptors.request.use(
   config => config,
-  async error => await Promise.reject(error)
+  error => Promise.reject(error)
 )
 
 instance.interceptors.response.use(
   result => result,
-  async error => await Promise.reject(error)
+  error => Promise.reject(error)
 )
 
 export default instance
