@@ -20,7 +20,12 @@ const Main: React.FC = () => {
       <span>Main</span>
       <PlusOutlined />
       <div>
-        <input value={value} onChange={e => setValue(parseInt(e.target.value))} />
+        <input
+          value={value}
+          onChange={e => {
+            setValue(parseInt(e.target.value))
+          }}
+        />
         <button onClick={() => dispatch(setCounter({ counter: value }))}>保存</button>
       </div>
     </div>
