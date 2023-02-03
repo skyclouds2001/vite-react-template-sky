@@ -8,8 +8,8 @@ module.exports = {
     'shared-node-browser': true,
     worker: true,
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'standard-with-typescript', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
-  overrides: [],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:promise/recommended', 'plugin:n/recommended', 'plugin:import/recommended', 'plugin:jsdoc/recommended', 'plugin:jsx-a11y/recommended', 'plugin:security/recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:markdown/recommended', 'plugin:json/recommended', 'plugin:prettier/recommended'],
+  plugins: ['@typescript-eslint', 'html', 'tsdoc'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -20,7 +20,17 @@ module.exports = {
     project: ['tsconfig.json'],
     tsconfigRootDir: '.',
   },
-  plugins: ['prettier', 'react', '@typescript-eslint'],
   rules: {},
-  ignorePatterns: ['vite.config.ts', '.eslintrc.js', '.prettierrc.js', '.stylelintrc.js', '.commitlintrc.js', '.lintstagedrc.js', '.postcssrc.js', 'tailwind.config.js'],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+  overrides: [
+    {
+      files: ['**/tests/**/*.[jt]s?(x)'],
+      extends: ['plugin:jest/recommended', 'plugin:jest-dom/recommended', 'plugin:testing-library/react', 'plugin:playwright/playwright-test', 'plugin:cypress/recommended'],
+      plugins: ['vitest'],
+    },
+  ],
 }
