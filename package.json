@@ -9,13 +9,19 @@
     "vite",
     "react",
     "react-router",
+    "redux",
     "ant-design",
     "typescript",
     "eslint",
     "prettier",
     "stylelint",
-    "commitlint"
+    "commitlint",
+    "lint-staged"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyclouds2001/vite-react-template-config-sky.git"
+  },
   "homepage": "https://github.com/skyclouds2001/vite-react-template-config-sky#readme",
   "bugs": {
     "url": "https://github.com/skyclouds2001/vite-react-template-config-sky/issues",
@@ -30,15 +36,11 @@
   "contributors": [
     "skyclouds2001"
   ],
-  "files": [
-    "src/",
-    "public/",
-    "index.html"
-  ],
   "main": "src/main.tsx",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/skyclouds2001/vite-react-template-config-sky.git"
+  "packageManager": "pnpm@7.25.0",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   },
   "scripts": {
     "dev": "vite",
@@ -46,7 +48,6 @@
     "preview": "vite preview",
     "prepare": "husky install"
   },
-  "packageManager": "pnpm@7.25.0",
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
     "@reduxjs/toolkit": "^1.9.2",
@@ -131,19 +132,5 @@
     "vite": "^4.1.1",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-stylelint": "^4.1.8"
-  },
-  "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6.0.0"
-  },
-  "os": [
-    "linux",
-    "win32"
-  ],
-  "cpu": [
-    "x64",
-    "ia32",
-    "arm",
-    "mips"
-  ]
+  }
 }
