@@ -19,6 +19,7 @@ module.exports = {
     },
     project: ['tsconfig.json'],
     tsconfigRootDir: '.',
+    extraFileExtensions: ['.vue', '.json', '.html', '.md', '.mdx'],
   },
   rules: {},
   settings: {
