@@ -22,7 +22,7 @@ const Main: React.FC = () => {
       <div>
         <input
           value={value}
-          onChange={e => {
+          onChange={(e) => {
             setValue(parseInt(e.target.value))
           }}
         />
