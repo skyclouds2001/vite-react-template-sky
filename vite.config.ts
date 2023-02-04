@@ -8,7 +8,7 @@ import stylelint from 'vite-plugin-stylelint'
 export default defineConfig({
   plugins: [react(), legacy(), eslint(), stylelint()],
   css: {
-    postcss: '.postcssrc.js',
+    postcss: 'postcss.config.js',
     devSourcemap: true,
   },
   resolve: {
