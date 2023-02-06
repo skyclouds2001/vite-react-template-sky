@@ -69,6 +69,7 @@
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.9",
+    "@testing-library/react": "^13.4.0",
     "@types/lodash-es": "^4.17.6",
     "@types/node": "^18.11.18",
     "@types/qs": "^6.9.7",
