@@ -39,7 +39,7 @@ module.exports = {
   overrides: [
     {
       files: ['**/tests/**/*.[jt]s?(x)'],
-      extends: ['plugin:jest/recommended', 'plugin:jest-dom/recommended', 'plugin:testing-library/react', 'plugin:playwright/playwright-test', 'plugin:cypress/recommended'],
+      extends: ['plugin:testing-library/react', 'plugin:playwright/playwright-test'],
       plugins: ['vitest'],
     },
   ],
