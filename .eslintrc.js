@@ -21,7 +21,10 @@ module.exports = {
     tsconfigRootDir: '.',
     extraFileExtensions: ['.vue', '.json', '.html', '.md', '.mdx'],
   },
-  rules: {},
+  rules: {
+    'import/default': 'off',
+    'n/no-missing-import': 'off',
+  },
   settings: {
     react: {
       version: 'detect',
