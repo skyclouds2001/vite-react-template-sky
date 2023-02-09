@@ -45,6 +45,10 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development vite",
     "build": "cross-env NODE_ENV=production tsc && vite build",
+    "lint": "pnpm exec eslint && pnpm exec stylelint",
+    "test": "pnpm test:unit && pnpm test:e2e",
+    "test:unit": "cross-env NODE_ENV=test vitest --coverage",
+    "test:e2e": "cross-env NODE_ENV=test playwright test",
     "preview": "vite preview",
     "prepare": "husky install"
   },
@@ -64,6 +68,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "@playwright/test": "^1.30.0",
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
