@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { PlusOutlined } from '@ant-design/icons'
+import type { RootStore } from '@/store'
 import { setCounter } from '@/store/modules/main'
-import { RootStore } from '@/store'
 
 const Main: React.FC = () => {
   const dispatch = useDispatch()
