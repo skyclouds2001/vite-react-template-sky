@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { PlusOutlined } from '@ant-design/icons'
+import Main from '@/components/main'
 import type { RootStore } from '@/store'
 import { setCounter } from '@/store/modules/main'
 
-const Main: React.FC = () => {
+const Home: React.FC = () => {
   const dispatch = useDispatch()
 
   const { counter } = useSelector((store: RootStore) => store.main)
@@ -17,7 +18,7 @@ const Main: React.FC = () => {
 
   return (
     <div>
-      <span>Main</span>
+      <span>Home</span>
       <PlusOutlined />
       <div>
         <input
@@ -28,8 +29,9 @@ const Main: React.FC = () => {
         />
         <button onClick={() => dispatch(setCounter({ counter: value }))}>保存</button>
       </div>
+      <Main />
     </div>
   )
 }
 
-export default Main
+export default Home
