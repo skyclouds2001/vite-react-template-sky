@@ -23,13 +23,19 @@ module.exports = {
   },
   rules: {
     'n/no-missing-import': 'off',
-    'import/default': 'off',
+    'import/no-unresolved': [
+      'error',
+      {
+        ignore: ['package.json'],
+      },
+    ],
     '@typescript-eslint/promise-function-async': 'off',
   },
   settings: {
     react: {
       version: 'detect',
     },
+    'import/core-modules': ['react', 'react-dom/client'],
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
@@ -47,7 +53,7 @@ module.exports = {
       plugins: ['vitest'],
     },
     {
-      files: ['*.ts', '*.tsx'],
+      files: ['*.ts', '*.tsx', '*.vue'],
       rules: {
         'jsdoc/require-param-type': 'off',
         'jsdoc/require-property-type': 'off',
