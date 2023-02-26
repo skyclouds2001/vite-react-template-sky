@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import path from 'node:path'
 import react from '@vitejs/plugin-react'
 import legacy from '@vitejs/plugin-legacy'
+import { viteMockServe as mock } from 'vite-plugin-mock'
 import eslint from 'vite-plugin-eslint'
 import stylelint from 'vite-plugin-stylelint'
 import visualizer from 'rollup-plugin-visualizer'
@@ -10,6 +11,7 @@ export default defineConfig({
   plugins: [
     react(),
     legacy(),
+    mock(),
     eslint({
       cache: true,
       cacheLocation: 'node_modules/.vite/.eslintcache',

@@ -2,9 +2,10 @@ import { defineConfig } from 'vitest/config'
 import path from 'node:path'
 import react from '@vitejs/plugin-react'
 import legacy from '@vitejs/plugin-legacy'
+import { viteMockServe as mock } from 'vite-plugin-mock'
 
 export default defineConfig({
-  plugins: [react(), legacy()],
+  plugins: [react(), legacy(), mock()],
   css: {
     postcss: 'postcss.config.js',
     devSourcemap: true,
