@@ -21,6 +21,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <div className={styles.text}>Home</div>
+      <div className="text-blue-200">Page</div>
       <PlusOutlined />
       <Icon icon="mdi-light:home" />
       <div>
