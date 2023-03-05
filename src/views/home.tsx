@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { PlusOutlined } from '@ant-design/icons'
+import { Icon } from '@iconify/react'
 import Main from '@/components/main'
 import type { RootStore } from '@/store'
 import { setCounter } from '@/store/modules/main'
@@ -18,8 +19,9 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <span>Home</span>
+      <div>Home</div>
       <PlusOutlined />
+      <Icon icon="mdi-light:home" />
       <div>
         <input
           value={value}
