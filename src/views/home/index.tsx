@@ -5,6 +5,7 @@ import { Icon } from '@iconify/react'
 import Main from '@/components/main'
 import type { RootStore } from '@/store'
 import { setCounter } from '@/store/modules/main'
+import styles from './index.module.scss'
 
 const Home: React.FC = () => {
   const dispatch = useDispatch()
@@ -19,7 +20,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <div>Home</div>
+      <div className={styles.text}>Home</div>
       <PlusOutlined />
       <Icon icon="mdi-light:home" />
       <div>
