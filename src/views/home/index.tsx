@@ -3,14 +3,13 @@ import { useDispatch, useSelector } from 'react-redux'
 import { PlusOutlined } from '@ant-design/icons'
 import { Icon } from '@iconify/react'
 import Main from '@/components/main'
-import type { RootStore } from '@/store'
-import { setCounter } from '@/store/modules/main'
+import { updateCounter, type AppDispatch, type RootState } from '@/store'
 import styles from './index.module.scss'
 
 const Home: React.FC = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch<AppDispatch>()
 
-  const { counter } = useSelector((store: RootStore) => store.main)
+  const counter = useSelector<RootState, RootState['main']['counter']>((store) => store.main.counter)
 
   const [value, setValue] = useState(counter)
 
@@ -31,7 +30,7 @@ const Home: React.FC = () => {
             setValue(parseInt(e.target.value))
           }}
         />
-        <button onClick={() => dispatch(setCounter({ counter: value }))}>保存</button>
+        <button onClick={() => dispatch(updateCounter(counter))}>保存</button>
       </div>
       <Main />
     </div>
