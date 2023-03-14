@@ -3,6 +3,7 @@ import path from 'node:path'
 import react from '@vitejs/plugin-react'
 import legacy from '@vitejs/plugin-legacy'
 import { viteMockServe as mock } from 'vite-plugin-mock'
+import mkcert from 'vite-plugin-mkcert'
 import eslint from 'vite-plugin-eslint'
 import stylelint from 'vite-plugin-stylelint'
 import visualizer from 'rollup-plugin-visualizer'
@@ -12,6 +13,7 @@ export default defineConfig({
     react(),
     legacy(),
     mock(),
+    mkcert(),
     eslint({
       cache: true,
       cacheLocation: 'node_modules/.vite/.eslintcache',
@@ -28,14 +30,18 @@ export default defineConfig({
       brotliSize: true,
     }),
   ],
-  css: {
-    postcss: 'postcss.config.js',
-    devSourcemap: true,
-  },
   resolve: {
     alias: {
       '~': __dirname,
       '@': path.resolve(__dirname, './src/'),
     },
+  },
+  css: {
+    devSourcemap: true,
+  },
+  server: {
+    strictPort: true,
+    https: true,
+    open: true,
   },
 })
