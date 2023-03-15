@@ -20,11 +20,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skyclouds2001/vite-react-template-config-sky.git"
+    "url": "git+https://github.com/skyclouds2001/vite-react-template-sky.git"
   },
-  "homepage": "https://github.com/skyclouds2001/vite-react-template-config-sky#readme",
+  "homepage": "https://github.com/skyclouds2001/vite-react-template-sky#readme",
   "bugs": {
-    "url": "https://github.com/skyclouds2001/vite-react-template-config-sky/issues",
+    "url": "https://github.com/skyclouds2001/vite-react-template-sky/issues",
     "email": "skyclouds2001@163.com"
   },
   "license": "MIT",
