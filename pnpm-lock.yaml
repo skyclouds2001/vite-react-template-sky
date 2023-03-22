@@ -57,6 +57,7 @@ specifiers:
   eslint-plugin-tsdoc: ^0.2.17
   eslint-plugin-vitest: ^0.0.54
   husky: ^8.0.3
+  is-ci: ^3.0.1
   jsdom: ^21.1.0
   less: ^4.1.3
   lint-staged: ^13.1.2
@@ -170,6 +171,7 @@ devDependencies:
   eslint-plugin-tsdoc: 0.2.17
   eslint-plugin-vitest: 0.0.54_ycpbpc6yetojsgtrx3mwntkhsu
   husky: 8.0.3
+  is-ci: 3.0.1
   jsdom: 21.1.0
   less: 4.1.3
   lint-staged: 13.1.2
