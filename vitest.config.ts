@@ -4,9 +4,10 @@ import react from '@vitejs/plugin-react'
 import legacy from '@vitejs/plugin-legacy'
 import { viteMockServe as mock } from 'vite-plugin-mock'
 import mkcert from 'vite-plugin-mkcert'
+import svgLoader from 'vite-svg-loader'
 
 export default defineConfig({
-  plugins: [react(), legacy(), mock(), mkcert()],
+  plugins: [react(), legacy(), mock(), mkcert(), svgLoader()],
   resolve: {
     alias: {
       '~': __dirname,
