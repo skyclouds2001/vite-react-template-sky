@@ -7,6 +7,7 @@ import mkcert from 'vite-plugin-mkcert'
 import eslint from 'vite-plugin-eslint'
 import stylelint from 'vite-plugin-stylelint'
 import visualizer from 'rollup-plugin-visualizer'
+import inspect from 'vite-plugin-inspect'
 
 export default defineConfig({
   plugins: [
@@ -29,6 +30,7 @@ export default defineConfig({
       gzipSize: true,
       brotliSize: true,
     }),
+    inspect(),
   ],
   resolve: {
     alias: {
