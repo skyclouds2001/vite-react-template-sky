@@ -19,11 +19,11 @@ export default defineConfig({
     svgLoader(),
     eslint({
       cache: true,
-      cacheLocation: 'node_modules/.vite/.eslintcache',
+      cacheLocation: 'node_modules/.eslint/.eslintcache',
     }),
     stylelint({
       cache: true,
-      cacheLocation: 'node_modules/.vite/.stylelintcache',
+      cacheLocation: 'node_modules/.stylelint/.stylelintcache',
     }),
     visualizer({
       filename: 'report.html',
