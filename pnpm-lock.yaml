@@ -3425,7 +3425,7 @@ packages:
       '@babel/core': 7.22.1
       '@babel/preset-env': 7.22.4(@babel/core@7.22.1)
       browserslist: 4.21.7
-      core-js: 3.30.2
+      core-js: 3.31.0
       magic-string: 0.30.0
       regenerator-runtime: 0.13.11
       systemjs: 6.14.1
@@ -4516,8 +4516,8 @@ packages:
       browserslist: 4.21.7
     dev: true
 
-  /core-js@3.30.2:
-    resolution: {integrity: sha512-uBJiDmwqsbJCWHAwjrx3cvjbMXP7xD72Dmsn5LOJpiRmE3WbBbN5rCqQ2Qh6Ek6/eOrjlWngEynBWo4VxerQhg==}
+  /core-js@3.31.0:
+    resolution: {integrity: sha512-NIp2TQSGfR6ba5aalZD+ZQ1fSxGhDo/s1w0nx3RYzf2pnJxt7YynxFlFScP6eV7+GZsKO95NSjGxyJsU3DZgeQ==}
     requiresBuild: true
     dev: true
 
