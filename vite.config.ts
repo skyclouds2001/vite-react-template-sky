@@ -5,10 +5,9 @@ import legacy from '@vitejs/plugin-legacy'
 import { viteMockServe as mock } from 'vite-plugin-mock'
 import mkcert from 'vite-plugin-mkcert'
 import svgLoader from 'vite-svg-loader'
-import eslint from 'vite-plugin-eslint'
-import stylelint from 'vite-plugin-stylelint'
 import visualizer from 'rollup-plugin-visualizer'
 import inspect from 'vite-plugin-inspect'
+import checker from 'vite-plugin-checker'
 
 export default defineConfig({
   plugins: [
@@ -17,13 +16,14 @@ export default defineConfig({
     mock(),
     mkcert(),
     svgLoader(),
-    eslint({
-      cache: true,
-      cacheLocation: 'node_modules/.eslint/.eslintcache',
-    }),
-    stylelint({
-      cache: true,
-      cacheLocation: 'node_modules/.stylelint/.stylelintcache',
+    checker({
+      vueTsc: true,
+      eslint: {
+        lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx,vue}"',
+      },
+      stylelint: {
+        lintCommand: 'stylelint ./src/**/*.{vue,css,sass,scss,less,styl,stylus}',
+      },
     }),
     visualizer({
       filename: 'report.html',
