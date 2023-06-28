@@ -17,7 +17,7 @@ export default defineConfig({
     mkcert(),
     svgLoader(),
     checker({
-      vueTsc: true,
+      typescript: true,
       eslint: {
         lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx,vue}"',
       },
