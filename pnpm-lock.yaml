@@ -404,8 +404,8 @@ packages:
       '@babel/highlight': 7.22.5
     dev: true
 
-  /@babel/compat-data@7.22.5:
-    resolution: {integrity: sha512-4Jc/YuIaYqKnDDz892kPIledykKg12Aw1PYX5i/TY28anJtacvM1Rrr8wbieB9GfEJwlzqT0hUEao0CxEebiDA==}
+  /@babel/compat-data@7.22.9:
+    resolution: {integrity: sha512-5UamI7xkUcJ3i9qVDS+KFDEK8/7oJ55/sJMB1Ge7IEapr7KfdfV/HErR+koZwOfd+SgtFKOKRhRakdg++DcJpQ==}
     engines: {node: '>=6.9.0'}
     dev: true
 
@@ -462,7 +462,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0
     dependencies:
-      '@babel/compat-data': 7.22.5
+      '@babel/compat-data': 7.22.9
       '@babel/core': 7.22.5
       '@babel/helper-validator-option': 7.22.5
       browserslist: 4.21.9
@@ -1245,7 +1245,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/compat-data': 7.22.5
+      '@babel/compat-data': 7.22.9
       '@babel/core': 7.22.5
       '@babel/helper-compilation-targets': 7.22.5(@babel/core@7.22.5)
       '@babel/helper-plugin-utils': 7.22.5
@@ -1478,7 +1478,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/compat-data': 7.22.5
+      '@babel/compat-data': 7.22.9
       '@babel/core': 7.22.5
       '@babel/helper-compilation-targets': 7.22.5(@babel/core@7.22.5)
       '@babel/helper-plugin-utils': 7.22.5
@@ -4239,7 +4239,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/compat-data': 7.22.5
+      '@babel/compat-data': 7.22.9
       '@babel/core': 7.22.5
       '@babel/helper-define-polyfill-provider': 0.4.0(@babel/core@7.22.5)
       semver: 6.3.0
