@@ -3715,7 +3715,7 @@ packages:
       rc-segmented: 2.2.2(react-dom@18.2.0)(react@18.2.0)
       rc-select: 14.5.2(react-dom@18.2.0)(react@18.2.0)
       rc-slider: 10.1.1(react-dom@18.2.0)(react@18.2.0)
-      rc-steps: 6.0.0(react-dom@18.2.0)(react@18.2.0)
+      rc-steps: 6.0.1(react-dom@18.2.0)(react@18.2.0)
       rc-switch: 4.1.0(react-dom@18.2.0)(react@18.2.0)
       rc-table: 7.32.1(react-dom@18.2.0)(react@18.2.0)
       rc-tabs: 12.9.0(react-dom@18.2.0)(react@18.2.0)
@@ -9414,8 +9414,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-steps@6.0.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-+KfMZIty40mYCQSDvYbZ1jwnuObLauTiIskT1hL4FFOBHP6ZOr8LK0m143yD3kEN5XKHSEX1DIwCj3AYZpoeNQ==}
+  /rc-steps@6.0.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-lKHL+Sny0SeHkQKKDJlAjV5oZ8DwCdS2hFhAkIjuQt1/pB81M0cA0ErVFdHq9+jmPmFw1vJB2F5NBzFXLJxV+g==}
     engines: {node: '>=8.x'}
     peerDependencies:
       react: '>=16.9.0'
