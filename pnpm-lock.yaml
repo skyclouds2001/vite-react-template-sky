@@ -3706,7 +3706,7 @@ packages:
       rc-mentions: 2.5.0(react-dom@18.2.0)(react@18.2.0)
       rc-menu: 9.10.0(react-dom@18.2.0)(react@18.2.0)
       rc-motion: 2.7.3(react-dom@18.2.0)(react@18.2.0)
-      rc-notification: 5.0.4(react-dom@18.2.0)(react@18.2.0)
+      rc-notification: 5.0.5(react-dom@18.2.0)(react@18.2.0)
       rc-pagination: 3.5.0(react-dom@18.2.0)(react@18.2.0)
       rc-picker: 3.10.0(dayjs@1.11.9)(react-dom@18.2.0)(react@18.2.0)
       rc-progress: 3.4.2(react-dom@18.2.0)(react@18.2.0)
@@ -9256,8 +9256,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-notification@5.0.4(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-3535oellIRlt1LspERfK8yvCqb8Gio3R02rULciaSc1xe3H7ArTU/khlUTv1ddGzua4HhmF4D4Rwz/+mBxETvg==}
+  /rc-notification@5.0.5(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-uEz2jggourwv/rR0obe7RHEa63UchqX4k+e+Qt2c3LaY7U9Tc+L6ANhzgCKYSA/afm0ebjmNZHoB5Cv47xEOcA==}
     engines: {node: '>=8.x'}
     peerDependencies:
       react: '>=16.9.0'
