@@ -2899,8 +2899,8 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@rc-component/color-picker@1.4.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-hNlJQnrT/vFwpS5+OhoFw7LHcBbmEBxS1RugJuCuL5FBqp9pMIAy2E8uqg87MvxqIsAccwd5r+vvaLterT+t7g==}
+  /@rc-component/color-picker@1.4.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-vh5EWqnsayZa/JwUznqDaPJz39jznx/YDbyBuVJntv735tKXKwEUZZb2jYEldOg+NKWZwtALjGMrNeGBmqFoEw==}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
@@ -3685,7 +3685,7 @@ packages:
       '@ant-design/react-slick': 1.0.1(react@18.2.0)
       '@babel/runtime': 7.22.6
       '@ctrl/tinycolor': 3.6.0
-      '@rc-component/color-picker': 1.4.0(react-dom@18.2.0)(react@18.2.0)
+      '@rc-component/color-picker': 1.4.1(react-dom@18.2.0)(react@18.2.0)
       '@rc-component/mutate-observer': 1.0.0(react-dom@18.2.0)(react@18.2.0)
       '@rc-component/tour': 1.8.0(react-dom@18.2.0)(react@18.2.0)
       '@rc-component/trigger': 1.14.1(react-dom@18.2.0)(react@18.2.0)
