@@ -3745,7 +3745,7 @@ packages:
       rc-field-form: 1.36.1(react-dom@18.2.0)(react@18.2.0)
       rc-image: 7.1.2(react-dom@18.2.0)(react@18.2.0)
       rc-input: 1.1.1(react-dom@18.2.0)(react@18.2.0)
-      rc-input-number: 8.0.3(react-dom@18.2.0)(react@18.2.0)
+      rc-input-number: 8.0.4(react-dom@18.2.0)(react@18.2.0)
       rc-mentions: 2.5.0(react-dom@18.2.0)(react@18.2.0)
       rc-menu: 9.10.0(react-dom@18.2.0)(react@18.2.0)
       rc-motion: 2.7.3(react-dom@18.2.0)(react@18.2.0)
@@ -9280,8 +9280,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-input-number@8.0.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-GHfWvufXEmwF/wtR8oPZNTuMdFb/rvx/+Sp2bZfaPftM+LFFdO8o3/PaeTk8DKt0Tv+u5Zuf68lqLdGCkmAXRg==}
+  /rc-input-number@8.0.4(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-TP+G5b7mZtbwXJ/YEZXF/OgbEZ6iqD4+RSuxZJ8VGKGXDcdt0FKIvpFoNQr/knspdFC4OxA0OfsWfFWfN4XSyA==}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
