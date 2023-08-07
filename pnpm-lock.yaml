@@ -3742,7 +3742,7 @@ packages:
       rc-dialog: 9.1.0(react-dom@18.2.0)(react@18.2.0)
       rc-drawer: 6.2.0(react-dom@18.2.0)(react@18.2.0)
       rc-dropdown: 4.1.0(react-dom@18.2.0)(react@18.2.0)
-      rc-field-form: 1.36.1(react-dom@18.2.0)(react@18.2.0)
+      rc-field-form: 1.36.2(react-dom@18.2.0)(react@18.2.0)
       rc-image: 7.1.2(react-dom@18.2.0)(react@18.2.0)
       rc-input: 1.1.1(react-dom@18.2.0)(react@18.2.0)
       rc-input-number: 8.0.3(react-dom@18.2.0)(react@18.2.0)
@@ -9250,8 +9250,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-field-form@1.36.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-v6CKM4aQ0+U9PPB1y42TB8+n5nCcdJOayJzGUJW5t/+yXLMRyo3SKH9QvHpL5XQY86esuleb7kBAzGxt4IKkvg==}
+  /rc-field-form@1.36.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-tCF/JjUsnxW80Gk4E4ZH74ONsaQMxVTRtui6XhQB8DJc4FHWLLa5pP8zwhxtPKC5NaO0QZ0Cv79JggDubn6n2g==}
     engines: {node: '>=8.x'}
     peerDependencies:
       react: '>=16.9.0'
