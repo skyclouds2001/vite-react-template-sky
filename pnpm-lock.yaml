@@ -2923,8 +2923,8 @@ packages:
       '@babel/runtime': 7.22.6
     dev: false
 
-  /@rc-component/mutate-observer@1.0.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-okqRJSfNisXdI6CUeOLZC5ukBW/8kir2Ii4PJiKpUt+3+uS7dxwJUMxsUZquxA1rQuL8YcEmKVp/TCnR+yUdZA==}
+  /@rc-component/mutate-observer@1.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-QjrOsDXQusNwGZPf4/qRQasg7UFEj06XiCJ8iuiq/Io7CrHrgVi6Uuetw60WAMG1799v+aM8kyc+1L/GBbHSlw==}
     engines: {node: '>=8.x'}
     peerDependencies:
       react: '>=16.9.0'
@@ -3729,7 +3729,7 @@ packages:
       '@babel/runtime': 7.22.6
       '@ctrl/tinycolor': 3.6.0
       '@rc-component/color-picker': 1.4.1(react-dom@18.2.0)(react@18.2.0)
-      '@rc-component/mutate-observer': 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@rc-component/mutate-observer': 1.1.0(react-dom@18.2.0)(react@18.2.0)
       '@rc-component/tour': 1.8.1(react-dom@18.2.0)(react@18.2.0)
       '@rc-component/trigger': 1.15.1(react-dom@18.2.0)(react@18.2.0)
       classnames: 2.3.2
