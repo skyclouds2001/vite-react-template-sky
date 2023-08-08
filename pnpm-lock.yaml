@@ -1311,15 +1311,15 @@ packages:
       '@babel/helper-plugin-utils': 7.22.5
     dev: true
 
-  /@babel/plugin-transform-regenerator@7.22.5(@babel/core@7.22.9):
-    resolution: {integrity: sha512-rR7KePOE7gfEtNTh9Qw+iO3Q/e4DEsoQ+hdvM6QUDH7JRJ5qxq5AA52ZzBWbI5i9lfNuvySgOGP8ZN7LAmaiPw==}
+  /@babel/plugin-transform-regenerator@7.22.10(@babel/core@7.22.9):
+    resolution: {integrity: sha512-F28b1mDt8KcT5bUyJc/U9nwzw6cV+UmTeRlXYIl2TNqMMJif0Jeey9/RQ3C4NOd2zp0/TRsDns9ttj2L523rsw==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.22.9
       '@babel/helper-plugin-utils': 7.22.5
-      regenerator-transform: 0.15.1
+      regenerator-transform: 0.15.2
     dev: true
 
   /@babel/plugin-transform-reserved-words@7.22.5(@babel/core@7.22.9):
@@ -1495,7 +1495,7 @@ packages:
       '@babel/plugin-transform-private-methods': 7.22.5(@babel/core@7.22.9)
       '@babel/plugin-transform-private-property-in-object': 7.22.5(@babel/core@7.22.9)
       '@babel/plugin-transform-property-literals': 7.22.5(@babel/core@7.22.9)
-      '@babel/plugin-transform-regenerator': 7.22.5(@babel/core@7.22.9)
+      '@babel/plugin-transform-regenerator': 7.22.10(@babel/core@7.22.9)
       '@babel/plugin-transform-reserved-words': 7.22.5(@babel/core@7.22.9)
       '@babel/plugin-transform-shorthand-properties': 7.22.5(@babel/core@7.22.9)
       '@babel/plugin-transform-spread': 7.22.5(@babel/core@7.22.9)
@@ -9880,8 +9880,8 @@ packages:
   /regenerator-runtime@0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
 
-  /regenerator-transform@0.15.1:
-    resolution: {integrity: sha512-knzmNAcuyxV+gQCufkYcvOqX/qIIfHLv0u5x79kRxuGojfYVky1f15TzZEu2Avte8QGepvUNTnLskf8E6X6Vyg==}
+  /regenerator-transform@0.15.2:
+    resolution: {integrity: sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==}
     dependencies:
       '@babel/runtime': 7.22.6
     dev: true
