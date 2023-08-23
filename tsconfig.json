@@ -32,7 +32,6 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "jsx": "preserve",
-    "jsxImportSource": "react-jsx",
     "lib": ["ESNext", "DOM", "WebWorker"],
     "target": "ESNext",
     "useDefineForClassFields": false,
