@@ -8,8 +8,7 @@ module.exports = {
     'shared-node-browser': true,
     worker: true,
   },
-  extends: ['eslint:recommended', 'standard-with-typescript', 'plugin:@typescript-eslint/recommended', 'plugin:promise/recommended', 'plugin:n/recommended', 'plugin:import/recommended', 'plugin:jsdoc/recommended', 'plugin:jsx-a11y/recommended', 'plugin:security/recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:regexp/recommended', 'plugin:markdown/recommended', 'plugin:json/recommended', 'plugin:prettier/recommended'],
-  plugins: ['html', 'tsdoc'],
+  extends: ['eslint:recommended', 'standard-with-typescript', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:promise/recommended', 'plugin:n/recommended', 'plugin:import/recommended', 'plugin:jsdoc/recommended', 'plugin:jsx-a11y/recommended', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -19,17 +18,21 @@ module.exports = {
     },
     project: ['tsconfig.json'],
     tsconfigRootDir: '.',
-    extraFileExtensions: ['.vue', '.json', '.html', '.md', '.mdx'],
+    extraFileExtensions: ['.vue'],
   },
+  plugins: [],
+  ignorePatterns: ['.eslintrc.js'],
+  globals: {},
   rules: {
     'n/no-missing-import': 'off',
+    'n/no-missing-require': 'off',
     'import/no-unresolved': [
       'error',
       {
-        ignore: ['package.json'],
+        commonjs: true,
+        amd: true,
       },
     ],
-    '@typescript-eslint/promise-function-async': 'off',
   },
   settings: {
     react: {
@@ -48,8 +51,12 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/tests/unit/*.[jt]s?(x)', '**/tests/components/*.[jt]s?(x)'],
-      extends: ['plugin:testing-library/vue', 'plugin:vitest/recommended'],
+      files: ['**/tests/unit/*.[jt]s?(x)'],
+      extends: ['plugin:vitest/recommended'],
+    },
+    {
+      files: ['**/tests/components/*.[jt]s?(x)'],
+      extends: ['plugin:vitest/recommended', 'plugin:testing-library/react'],
     },
     {
       files: ['**/tests/e2e/*.[jt]s?(x)'],
