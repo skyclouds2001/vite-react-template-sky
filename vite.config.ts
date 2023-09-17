@@ -3,7 +3,6 @@ import path from 'node:path'
 import react from '@vitejs/plugin-react'
 import legacy from '@vitejs/plugin-legacy'
 import { viteMockServe as mock } from 'vite-plugin-mock'
-import mkcert from 'vite-plugin-mkcert'
 import svgLoader from 'vite-svg-loader'
 import visualizer from 'rollup-plugin-visualizer'
 import inspect from 'vite-plugin-inspect'
@@ -14,7 +13,6 @@ export default defineConfig({
     react(),
     legacy(),
     mock(),
-    mkcert(),
     svgLoader(),
     checker({
       typescript: true,
