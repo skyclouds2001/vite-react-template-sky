@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import path from 'node:path'
+import fs from 'node:fs'
 import react from '@vitejs/plugin-react'
 import legacy from '@vitejs/plugin-legacy'
 import { viteMockServe as mock } from 'vite-plugin-mock'
@@ -45,14 +46,20 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     strictPort: true,
-    https: true,
+    https: {
+      key: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1-key.pem')),
+      cert: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1.pem')),
+    },
     open: true,
   },
   preview: {
     host: '0.0.0.0',
     port: 4173,
     strictPort: true,
-    https: true,
+    https: {
+      key: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1-key.pem')),
+      cert: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1.pem')),
+    },
     open: true,
   },
 })
