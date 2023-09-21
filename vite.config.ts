@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
 import path from 'node:path'
+import fs from 'node:fs'
 import react from '@vitejs/plugin-react'
 import legacy from '@vitejs/plugin-legacy'
 import { viteMockServe as mock } from 'vite-plugin-mock'
-import mkcert from 'vite-plugin-mkcert'
 import svgLoader from 'vite-svg-loader'
 import visualizer from 'rollup-plugin-visualizer'
 import inspect from 'vite-plugin-inspect'
@@ -14,7 +14,6 @@ export default defineConfig({
     react(),
     legacy(),
     mock(),
-    mkcert(),
     svgLoader(),
     checker({
       typescript: true,
@@ -47,14 +46,20 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     strictPort: true,
-    https: true,
+    https: {
+      key: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1-key.pem')),
+      cert: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1.pem')),
+    },
     open: true,
   },
   preview: {
     host: '0.0.0.0',
     port: 4173,
     strictPort: true,
-    https: true,
+    https: {
+      key: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1-key.pem')),
+      cert: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1.pem')),
+    },
     open: true,
   },
 })
