@@ -1,4 +1,4 @@
-# sky-admin
+# vite-react-template-sky
 
 ## 0.0.0
 
