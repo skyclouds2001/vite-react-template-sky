@@ -7,12 +7,6 @@ import svgLoader from 'vite-svg-loader'
 
 export default defineConfig({
   plugins: [react(), legacy(), mock(), svgLoader()],
-  resolve: {
-    alias: {
-      '~': __dirname,
-      '@': path.resolve(__dirname, './src/'),
-    },
-  },
   test: {
     root: '.',
     include: ['**/?(*.){test,spec}.?(c|m)[jt]s?(x)'],
@@ -23,6 +17,10 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       enabled: true,
+    },
+    alias: {
+      '~': __dirname,
+      '@': path.resolve(__dirname, 'src'),
     },
     cache: {},
   },

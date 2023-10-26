@@ -8,7 +8,7 @@ module.exports = {
     'shared-node-browser': true,
     worker: true,
   },
-  extends: ['eslint:recommended', 'standard-with-typescript', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:promise/recommended', 'plugin:n/recommended', 'plugin:import/recommended', 'plugin:jsdoc/recommended', 'plugin:jsx-a11y/recommended', 'plugin:prettier/recommended'],
+  extends: ['eslint:recommended', 'standard-with-typescript', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:promise/recommended', 'plugin:n/recommended', 'plugin:import/recommended', 'plugin:import/typescript', 'plugin:jsdoc/recommended', 'plugin:jsx-a11y/recommended', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -18,7 +18,6 @@ module.exports = {
     },
     project: ['tsconfig.json'],
     tsconfigRootDir: '.',
-    extraFileExtensions: ['.vue'],
   },
   plugins: [],
   ignorePatterns: ['.eslintrc.js'],
@@ -26,19 +25,11 @@ module.exports = {
   rules: {
     'n/no-missing-import': 'off',
     'n/no-missing-require': 'off',
-    'import/no-unresolved': [
-      'error',
-      {
-        commonjs: true,
-        amd: true,
-      },
-    ],
   },
   settings: {
     react: {
       version: 'detect',
     },
-    'import/core-modules': ['react', 'react-dom/client'],
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
@@ -63,7 +54,7 @@ module.exports = {
       extends: ['plugin:playwright/playwright-test'],
     },
     {
-      files: ['*.ts', '*.tsx', '*.vue'],
+      files: ['*.ts', '*.tsx'],
       rules: {
         'jsdoc/require-param-type': 'off',
         'jsdoc/require-property-type': 'off',

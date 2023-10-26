@@ -18,10 +18,10 @@ export default defineConfig({
     checker({
       typescript: true,
       eslint: {
-        lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx,vue}"',
+        lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx}"',
       },
       stylelint: {
-        lintCommand: 'stylelint ./src/**/*.{vue,css,scss}',
+        lintCommand: 'stylelint ./src/**/*.{css,scss}',
       },
     }),
     visualizer({
@@ -36,7 +36,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '~': __dirname,
-      '@': path.resolve(__dirname, './src/'),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
   css: {
