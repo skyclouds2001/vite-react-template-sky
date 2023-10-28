@@ -12,16 +12,8 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.vue'],
-      extends: ['stylelint-config-standard-vue'],
-    },
-    {
       files: ['**/*.scss'],
       extends: ['stylelint-config-standard-scss', 'stylelint-config-prettier-scss'],
-    },
-    {
-      files: ['**/*.less'],
-      extends: ['stylelint-config-standard-less'],
     },
   ],
 }
