@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import path from 'node:path'
-import fs from 'node:fs'
 import react from '@vitejs/plugin-react'
 import legacy from '@vitejs/plugin-legacy'
 import { viteMockServe as mock } from 'vite-plugin-mock'
