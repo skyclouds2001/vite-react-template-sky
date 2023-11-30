@@ -22,13 +22,7 @@ export default defineConfig({
         lintCommand: 'stylelint ./src/**/*.{css,scss}',
       },
     }),
-    visualizer({
-      filename: 'report.html',
-      title: 'report',
-      open: true,
-      gzipSize: true,
-      brotliSize: true,
-    }),
+    visualizer(),
   ],
   resolve: {
     alias: {
