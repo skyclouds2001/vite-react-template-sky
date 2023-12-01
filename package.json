@@ -157,7 +157,6 @@
     "vite-plugin-checker": "^0.6.2",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-mock": "^3.0.0",
-    "vite-svg-loader": "^5.1.0",
     "vitest": "^0.34.6"
   }
 }
