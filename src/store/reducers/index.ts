@@ -1,10 +1,10 @@
 import { combineReducers } from '@reduxjs/toolkit'
-import MainSlice from './main'
+import mainSlice from './main'
 
 const rootReducers = combineReducers({
-  main: MainSlice,
+  main: mainSlice,
 })
 
-export * from './main'
-
 export default rootReducers
+
+export { updateCounter, increaseCounter, decreaseCounter } from './main'

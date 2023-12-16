@@ -1,20 +1,25 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit'
 
-export const main = createSlice({
+export const mainSlice = createSlice({
   name: 'main',
 
   initialState: {
     counter: 0,
-    title: 'redux toolkit pre',
   },
 
   reducers: {
-    updateCounter(state, action: PayloadAction<number>) {
+    updateCounter: (state, action: PayloadAction<number>) => {
       state.counter = action.payload
+    },
+    increaseCounter: (state) => {
+      ++state.counter
+    },
+    decreaseCounter: (state) => {
+      --state.counter
     },
   },
 })
 
-export const { updateCounter } = main.actions
+export default mainSlice.reducer
 
-export default main.reducer
+export const { updateCounter, increaseCounter, decreaseCounter } = mainSlice.actions
