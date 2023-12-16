@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { PlusOutlined } from '@ant-design/icons'
 import { Icon } from '@iconify/react'
-import Main from '@/components/main'
+import { Main } from '@/components'
 import { updateCounter, type AppDispatch, type RootState } from '@/store'
 import styles from './index.module.scss'
 
