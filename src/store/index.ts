@@ -5,10 +5,10 @@ const store = configureStore({
   reducer: rootReducers,
 })
 
+export default store
+
+export { updateCounter, increaseCounter, decreaseCounter } from './reducers'
+
 export type RootState = ReturnType<typeof store.getState>
 
 export type AppDispatch = typeof store.dispatch
-
-export * from './reducers'
-
-export default store
