@@ -12,8 +12,8 @@ dependencies:
     specifier: ^2.0.1
     version: 2.0.1(react-redux@9.0.4)(react@18.2.0)
   antd:
-    specifier: ^5.12.5
-    version: 5.12.5(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^5.12.6
+    version: 5.12.6(react-dom@18.2.0)(react@18.2.0)
   axios:
     specifier: ^1.6.3
     version: 1.6.3
@@ -1762,6 +1762,7 @@ packages:
   /@commitlint/config-validator@18.4.3:
     resolution: {integrity: sha512-FPZZmTJBARPCyef9ohRC9EANiQEKSWIdatx5OlgeHKu878dWwpyeFauVkhzuBRJFcCA4Uvz/FDtlDKs008IHcA==}
     engines: {node: '>=v18'}
+    requiresBuild: true
     dependencies:
       '@commitlint/types': 18.4.3
       ajv: 8.12.0
@@ -1782,6 +1783,7 @@ packages:
   /@commitlint/execute-rule@18.4.3:
     resolution: {integrity: sha512-t7FM4c+BdX9WWZCPrrbV5+0SWLgT3kCq7e7/GhHCreYifg3V8qyvO127HF796vyFql75n4TFF+5v1asOOWkV1Q==}
     engines: {node: '>=v18'}
+    requiresBuild: true
     dev: true
 
   /@commitlint/format@18.4.3:
@@ -1858,6 +1860,7 @@ packages:
   /@commitlint/resolve-extends@18.4.3:
     resolution: {integrity: sha512-30sk04LZWf8+SDgJrbJCjM90gTg2LxsD9cykCFeFu+JFHvBFq5ugzp2eO/DJGylAdVaqxej3c7eTSE64hR/lnw==}
     engines: {node: '>=v18'}
+    requiresBuild: true
     dependencies:
       '@commitlint/config-validator': 18.4.3
       '@commitlint/types': 18.4.3
@@ -2279,11 +2282,6 @@ packages:
     dependencies:
       postcss-selector-parser: 6.0.15
     dev: true
-
-  /@ctrl/tinycolor@3.6.1:
-    resolution: {integrity: sha512-SITSV6aIXsuVNV3f3O0f2n/cgyEDWoSqtZMYiAmcsYHydcKrOz3gUxB/iXd/Qf08+IZX4KpgNbvUdMBmWz+kcA==}
-    engines: {node: '>=10'}
-    dev: false
 
   /@ctrl/tinycolor@4.0.2:
     resolution: {integrity: sha512-fKQinXE9pJ83J1n+C3rDl2xNLJwfoYNvXLRy5cYZA9hBJJw2q+sbb/AOSNKmLxnTWyNTmy4994dueSwP4opi5g==}
@@ -2710,14 +2708,14 @@ packages:
     resolution: {integrity: sha512-2LuNTFBIO0m7kKIQvvPHN6UE63VjpmL9rnEEaOOaiSPbZK+zUOYIzBAWcED+3XYzhYsd/0mD57VdxAEqqV52CQ==}
     dev: true
 
-  /@rc-component/color-picker@1.4.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-vh5EWqnsayZa/JwUznqDaPJz39jznx/YDbyBuVJntv735tKXKwEUZZb2jYEldOg+NKWZwtALjGMrNeGBmqFoEw==}
+  /@rc-component/color-picker@1.5.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-sWZCV0VAJlSYfo8FwpHVK0UZUSECddYxkLUGjiYuc9cOVVB/+hYr0BJbgzSG21MWYad3Wl8O0qBwalBsK4J4Dg==}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
     dependencies:
       '@babel/runtime': 7.23.7
-      '@ctrl/tinycolor': 3.6.1
+      '@ctrl/tinycolor': 4.0.2
       classnames: 2.5.1
       rc-util: 5.38.1(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
@@ -3161,6 +3159,7 @@ packages:
 
   /@types/node@18.19.4:
     resolution: {integrity: sha512-xNzlUhzoHotIsnFoXmJB+yWmBvFZgKCI9TtPIEdYIMM1KWfwuY8zh7wvc1u1OAXlC7dlf6mZVx/s+Y5KfFz19A==}
+    requiresBuild: true
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -3629,8 +3628,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /antd@5.12.5(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-m9r9VhTmANS4kdBwHcxI4QWIGoZh3LspXNb2SxoezRSUZ9RUFpf+gO0AjPx8EPeO/nLKsHAoCSLza9r041bAgw==}
+  /antd@5.12.6(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Fbv+99dONoR7gXpKfaUYKYMxLMx1WJfdwb/A7TW35oXrecn6O1HyiujJm5RdGDdHXkpBirKJ3+jTlD/Mm6Tmag==}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
@@ -3640,8 +3639,8 @@ packages:
       '@ant-design/icons': 5.2.6(react-dom@18.2.0)(react@18.2.0)
       '@ant-design/react-slick': 1.0.2(react@18.2.0)
       '@babel/runtime': 7.23.7
-      '@ctrl/tinycolor': 3.6.1
-      '@rc-component/color-picker': 1.4.1(react-dom@18.2.0)(react@18.2.0)
+      '@ctrl/tinycolor': 4.0.2
+      '@rc-component/color-picker': 1.5.0(react-dom@18.2.0)(react@18.2.0)
       '@rc-component/mutate-observer': 1.1.0(react-dom@18.2.0)(react@18.2.0)
       '@rc-component/tour': 1.11.1(react-dom@18.2.0)(react@18.2.0)
       '@rc-component/trigger': 1.18.2(react-dom@18.2.0)(react@18.2.0)
@@ -3679,7 +3678,7 @@ packages:
       rc-tooltip: 6.1.3(react-dom@18.2.0)(react@18.2.0)
       rc-tree: 5.8.2(react-dom@18.2.0)(react@18.2.0)
       rc-tree-select: 5.15.0(react-dom@18.2.0)(react@18.2.0)
-      rc-upload: 4.3.6(react-dom@18.2.0)(react@18.2.0)
+      rc-upload: 4.5.2(react-dom@18.2.0)(react@18.2.0)
       rc-util: 5.38.1(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -4391,6 +4390,7 @@ packages:
   /cosmiconfig-typescript-loader@5.0.0(@types/node@18.19.4)(cosmiconfig@8.3.6)(typescript@5.3.3):
     resolution: {integrity: sha512-+8cK7jRAReYkMwMiG+bxhcNKiHJDM6bR9FD/nGBXOWdMLuYawjF5cGrtLilJ+LGd3ZjCXnJjR5DkfWPoIVlqJA==}
     engines: {node: '>=v16'}
+    requiresBuild: true
     peerDependencies:
       '@types/node': '*'
       cosmiconfig: '>=8.2'
@@ -4405,6 +4405,7 @@ packages:
   /cosmiconfig@8.3.6(typescript@5.3.3):
     resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
     engines: {node: '>=14'}
+    requiresBuild: true
     peerDependencies:
       typescript: '>=4.9.5'
     peerDependenciesMeta:
@@ -7062,6 +7063,7 @@ packages:
 
   /lodash.mergewith@4.6.2:
     resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
+    requiresBuild: true
     dev: true
 
   /lodash.pick@4.4.0:
@@ -9271,8 +9273,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-upload@4.3.6(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Bt7ESeG5tT3IY82fZcP+s0tQU2xmo1W6P3S8NboUUliquJLQYLkUcsaExi3IlBVr43GQMCjo30RA2o0i70+NjA==}
+  /rc-upload@4.5.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-QO3ne77DwnAPKFn0bA5qJM81QBjQi0e0NHdkvpFyY73Bea2NfITiotqJqVjHgeYPOJu5lLVR32TNGP084aSoXA==}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
