@@ -274,10 +274,10 @@ packages:
       '@jridgewell/trace-mapping': 0.3.20
     dev: true
 
-  /@ant-design/colors@7.0.1:
-    resolution: {integrity: sha512-SrZBQcrXNmrH8TJPXZReYcXs4jSqkwNS3EEhpN6esBI9sNX70g5LZP05/uSPjflkIt2orvjivQ/ywVBqTbHZ+A==}
+  /@ant-design/colors@7.0.2:
+    resolution: {integrity: sha512-7KJkhTiPiLHSu+LmMJnehfJ6242OCxSlR3xHVBecYxnMW8MS/878NXct1GqYARyL59fyeFdKRxXTfvR9SnDgJg==}
     dependencies:
-      '@ctrl/tinycolor': 4.0.2
+      '@ctrl/tinycolor': 3.6.1
     dev: false
 
   /@ant-design/cssinjs@1.18.2(react-dom@18.2.0)(react@18.2.0):
@@ -308,7 +308,7 @@ packages:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
-      '@ant-design/colors': 7.0.1
+      '@ant-design/colors': 7.0.2
       '@ant-design/icons-svg': 4.3.1
       '@babel/runtime': 7.23.7
       classnames: 2.5.1
@@ -1762,6 +1762,7 @@ packages:
   /@commitlint/config-validator@18.4.3:
     resolution: {integrity: sha512-FPZZmTJBARPCyef9ohRC9EANiQEKSWIdatx5OlgeHKu878dWwpyeFauVkhzuBRJFcCA4Uvz/FDtlDKs008IHcA==}
     engines: {node: '>=v18'}
+    requiresBuild: true
     dependencies:
       '@commitlint/types': 18.4.3
       ajv: 8.12.0
@@ -1782,6 +1783,7 @@ packages:
   /@commitlint/execute-rule@18.4.3:
     resolution: {integrity: sha512-t7FM4c+BdX9WWZCPrrbV5+0SWLgT3kCq7e7/GhHCreYifg3V8qyvO127HF796vyFql75n4TFF+5v1asOOWkV1Q==}
     engines: {node: '>=v18'}
+    requiresBuild: true
     dev: true
 
   /@commitlint/format@18.4.3:
@@ -1858,6 +1860,7 @@ packages:
   /@commitlint/resolve-extends@18.4.3:
     resolution: {integrity: sha512-30sk04LZWf8+SDgJrbJCjM90gTg2LxsD9cykCFeFu+JFHvBFq5ugzp2eO/DJGylAdVaqxej3c7eTSE64hR/lnw==}
     engines: {node: '>=v18'}
+    requiresBuild: true
     dependencies:
       '@commitlint/config-validator': 18.4.3
       '@commitlint/types': 18.4.3
@@ -2283,11 +2286,6 @@ packages:
   /@ctrl/tinycolor@3.6.1:
     resolution: {integrity: sha512-SITSV6aIXsuVNV3f3O0f2n/cgyEDWoSqtZMYiAmcsYHydcKrOz3gUxB/iXd/Qf08+IZX4KpgNbvUdMBmWz+kcA==}
     engines: {node: '>=10'}
-    dev: false
-
-  /@ctrl/tinycolor@4.0.2:
-    resolution: {integrity: sha512-fKQinXE9pJ83J1n+C3rDl2xNLJwfoYNvXLRy5cYZA9hBJJw2q+sbb/AOSNKmLxnTWyNTmy4994dueSwP4opi5g==}
-    engines: {node: '>=14'}
     dev: false
 
   /@emotion/hash@0.8.0:
@@ -3161,6 +3159,7 @@ packages:
 
   /@types/node@18.19.4:
     resolution: {integrity: sha512-xNzlUhzoHotIsnFoXmJB+yWmBvFZgKCI9TtPIEdYIMM1KWfwuY8zh7wvc1u1OAXlC7dlf6mZVx/s+Y5KfFz19A==}
+    requiresBuild: true
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -3635,7 +3634,7 @@ packages:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
     dependencies:
-      '@ant-design/colors': 7.0.1
+      '@ant-design/colors': 7.0.2
       '@ant-design/cssinjs': 1.18.2(react-dom@18.2.0)(react@18.2.0)
       '@ant-design/icons': 5.2.6(react-dom@18.2.0)(react@18.2.0)
       '@ant-design/react-slick': 1.0.2(react@18.2.0)
@@ -4391,6 +4390,7 @@ packages:
   /cosmiconfig-typescript-loader@5.0.0(@types/node@18.19.4)(cosmiconfig@8.3.6)(typescript@5.3.3):
     resolution: {integrity: sha512-+8cK7jRAReYkMwMiG+bxhcNKiHJDM6bR9FD/nGBXOWdMLuYawjF5cGrtLilJ+LGd3ZjCXnJjR5DkfWPoIVlqJA==}
     engines: {node: '>=v16'}
+    requiresBuild: true
     peerDependencies:
       '@types/node': '*'
       cosmiconfig: '>=8.2'
@@ -4405,6 +4405,7 @@ packages:
   /cosmiconfig@8.3.6(typescript@5.3.3):
     resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
     engines: {node: '>=14'}
+    requiresBuild: true
     peerDependencies:
       typescript: '>=4.9.5'
     peerDependenciesMeta:
@@ -7062,6 +7063,7 @@ packages:
 
   /lodash.mergewith@4.6.2:
     resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
+    requiresBuild: true
     dev: true
 
   /lodash.pick@4.4.0:
