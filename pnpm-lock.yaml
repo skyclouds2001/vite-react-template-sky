@@ -170,8 +170,8 @@ devDependencies:
     specifier: ^3.0.1
     version: 3.0.1
   jsdom:
-    specifier: ^23.2.0
-    version: 23.2.0
+    specifier: ^24.0.0
+    version: 24.0.0
   lint-staged:
     specifier: ^15.2.0
     version: 15.2.0
@@ -252,7 +252,7 @@ devDependencies:
     version: 0.17.4(vite@5.0.11)(workbox-build@7.0.0)(workbox-window@7.0.0)
   vitest:
     specifier: ^1.2.0
-    version: 1.2.0(@types/node@20.11.0)(@vitest/ui@1.2.0)(jsdom@23.2.0)(sass@1.69.7)(terser@5.26.0)
+    version: 1.2.0(@types/node@20.11.0)(@vitest/ui@1.2.0)(jsdom@24.0.0)(sass@1.69.7)(terser@5.26.0)
 
 packages:
 
@@ -340,14 +340,6 @@ packages:
       json-schema: 0.4.0
       jsonpointer: 5.0.1
       leven: 3.1.0
-    dev: true
-
-  /@asamuzakjp/dom-selector@2.0.2:
-    resolution: {integrity: sha512-x1KXOatwofR6ZAYzXRBL5wrdV0vwNxlTCK9NCuLqAzQYARqGcvFwiJA6A1ERuh+dgeA4Dxm3JBYictIes+SqUQ==}
-    dependencies:
-      bidi-js: 1.0.3
-      css-tree: 2.3.1
-      is-potential-custom-element-name: 1.0.1
     dev: true
 
   /@babel/code-frame@7.23.5:
@@ -3464,7 +3456,7 @@ packages:
       std-env: 3.7.0
       test-exclude: 6.0.0
       v8-to-istanbul: 9.2.0
-      vitest: 1.2.0(@types/node@20.11.0)(@vitest/ui@1.2.0)(jsdom@23.2.0)(sass@1.69.7)(terser@5.26.0)
+      vitest: 1.2.0(@types/node@20.11.0)(@vitest/ui@1.2.0)(jsdom@24.0.0)(sass@1.69.7)(terser@5.26.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3511,7 +3503,7 @@ packages:
       pathe: 1.1.2
       picocolors: 1.0.0
       sirv: 2.0.4
-      vitest: 1.2.0(@types/node@20.11.0)(@vitest/ui@1.2.0)(jsdom@23.2.0)(sass@1.69.7)(terser@5.26.0)
+      vitest: 1.2.0(@types/node@20.11.0)(@vitest/ui@1.2.0)(jsdom@24.0.0)(sass@1.69.7)(terser@5.26.0)
     dev: true
 
   /@vitest/utils@1.2.0:
@@ -3954,12 +3946,6 @@ packages:
     engines: {node: '>=4'}
     dependencies:
       is-windows: 1.0.2
-    dev: true
-
-  /bidi-js@1.0.3:
-    resolution: {integrity: sha512-RKshQI1R3YQ+n9YJz2QQ147P66ELpa1FQEg20Dk8oW9t2KgLbpDLLp9aGZ7y8WHSshDknG0bknqGw5/tyCs5tw==}
-    dependencies:
-      require-from-string: 2.0.2
     dev: true
 
   /binary-extensions@2.2.0:
@@ -5487,7 +5473,7 @@ packages:
       '@typescript-eslint/eslint-plugin': 6.18.1(@typescript-eslint/parser@6.18.1)(eslint@8.56.0)(typescript@5.3.3)
       '@typescript-eslint/utils': 6.18.1(eslint@8.56.0)(typescript@5.3.3)
       eslint: 8.56.0
-      vitest: 1.2.0(@types/node@20.11.0)(@vitest/ui@1.2.0)(jsdom@23.2.0)(sass@1.69.7)(terser@5.26.0)
+      vitest: 1.2.0(@types/node@20.11.0)(@vitest/ui@1.2.0)(jsdom@24.0.0)(sass@1.69.7)(terser@5.26.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -6774,8 +6760,8 @@ packages:
     engines: {node: '>=12.0.0'}
     dev: true
 
-  /jsdom@23.2.0:
-    resolution: {integrity: sha512-L88oL7D/8ufIES+Zjz7v0aes+oBMh2Xnh3ygWvL0OaICOomKEPKuPnIfBJekiXr+BHbbMjrWn/xqrDQuxFTeyA==}
+  /jsdom@24.0.0:
+    resolution: {integrity: sha512-UDS2NayCvmXSXVP6mpTj+73JnNQadZlr9N68189xib2tx5Mls7swlTNao26IoHv46BZJFvXygyRtyXd1feAk1A==}
     engines: {node: '>=18'}
     peerDependencies:
       canvas: ^2.11.2
@@ -6783,7 +6769,6 @@ packages:
       canvas:
         optional: true
     dependencies:
-      '@asamuzakjp/dom-selector': 2.0.2
       cssstyle: 4.0.1
       data-urls: 5.0.0
       decimal.js: 10.4.3
@@ -6792,6 +6777,7 @@ packages:
       http-proxy-agent: 7.0.0
       https-proxy-agent: 7.0.2
       is-potential-custom-element-name: 1.0.1
+      nwsapi: 2.2.7
       parse5: 7.1.2
       rrweb-cssom: 0.6.0
       saxes: 6.0.0
@@ -7583,6 +7569,10 @@ packages:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
     dependencies:
       boolbase: 1.0.0
+    dev: true
+
+  /nwsapi@2.2.7:
+    resolution: {integrity: sha512-ub5E4+FBPKwAZx0UwIQOjYWGHTEq5sPqHQNRN8Z9e4A7u3Tj1weLJsL59yH9vmvqEtBHaOmT6cYQKIZOxp35FQ==}
     dev: true
 
   /object-assign@4.1.1:
@@ -11130,7 +11120,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@1.2.0(@types/node@20.11.0)(@vitest/ui@1.2.0)(jsdom@23.2.0)(sass@1.69.7)(terser@5.26.0):
+  /vitest@1.2.0(@types/node@20.11.0)(@vitest/ui@1.2.0)(jsdom@24.0.0)(sass@1.69.7)(terser@5.26.0):
     resolution: {integrity: sha512-Ixs5m7BjqvLHXcibkzKRQUvD/XLw0E3rvqaCMlrm/0LMsA0309ZqYvTlPzkhh81VlEyVZXFlwWnkhb6/UMtcaQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -11167,7 +11157,7 @@ packages:
       chai: 4.4.1
       debug: 4.3.4
       execa: 8.0.1
-      jsdom: 23.2.0
+      jsdom: 24.0.0
       local-pkg: 0.5.0
       magic-string: 0.30.5
       pathe: 1.1.2
