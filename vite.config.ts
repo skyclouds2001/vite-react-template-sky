@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { type Plugin, defineConfig } from 'vite'
 import path from 'node:path'
 import react from '@vitejs/plugin-react'
 import legacy from '@vitejs/plugin-legacy'
@@ -40,7 +40,7 @@ export default defineConfig({
         lintCommand: 'stylelint ./src/**/*.{css,scss}',
       },
     }),
-    visualizer(),
+    visualizer() as unknown as Plugin,
   ],
   resolve: {
     alias: {
