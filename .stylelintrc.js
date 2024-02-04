@@ -1,7 +1,5 @@
 /** @type {import('stylelint').Config} */
 export default {
-  extends: ['stylelint-config-standard', 'stylelint-config-recess-order'],
-  plugins: [],
   rules: {
     'at-rule-no-unknown': [
       true,
@@ -9,12 +7,16 @@ export default {
         ignoreAtRules: ['tailwind', 'layer', 'apply', 'variants', 'responsive', 'screen'],
       },
     ],
-    'no-empty-source': null,
   },
+  extends: ['stylelint-config-standard', 'stylelint-config-recess-order'],
+  plugins: [],
   overrides: [
     {
       files: ['**/*.scss'],
       extends: ['stylelint-config-standard-scss', 'stylelint-config-prettier-scss'],
     },
   ],
+  allowEmptyInput: true,
+  cache: true,
+  fix: true,
 }
