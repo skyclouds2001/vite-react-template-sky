@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 import legacy from '@vitejs/plugin-legacy'
 import { viteMockServe as mock } from 'vite-plugin-mock'
 import { VitePWA as pwa } from 'vite-plugin-pwa'
-import visualizer from 'rollup-plugin-visualizer'
+import { visualizer } from 'rollup-plugin-visualizer'
 import checker from 'vite-plugin-checker'
 
 export default defineConfig({
@@ -36,9 +36,9 @@ export default defineConfig({
       eslint: {
         lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx}"',
       },
-      stylelint: {
-        lintCommand: 'stylelint ./src/**/*.{css,scss}',
-      },
+      // stylelint: {
+      //   lintCommand: 'stylelint "./src/**/*.{css,scss}"',
+      // },
     }),
     visualizer() as unknown as Plugin,
   ],
