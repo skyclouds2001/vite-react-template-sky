@@ -76,7 +76,7 @@
     "preinstall": "only-allow pnpm"
   },
   "dependencies": {
-    "@ant-design/icons": "^5.2.6",
+    "@ant-design/icons": "^5.3.0",
     "@reduxjs/toolkit": "^2.0.1",
     "antd": "^5.12.8",
     "axios": "^1.6.5",
