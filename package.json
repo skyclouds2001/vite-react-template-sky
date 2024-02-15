@@ -159,7 +159,7 @@
     "vite-plugin-checker": "^0.6.4",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-mock": "^3.0.1",
-    "vite-plugin-pwa": "^0.17.5",
+    "vite-plugin-pwa": "^0.18.1",
     "vitest": "^1.2.2"
   }
 }
