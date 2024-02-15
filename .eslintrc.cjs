@@ -20,7 +20,7 @@ module.exports = {
     tsconfigRootDir: '.',
   },
   plugins: [],
-  ignorePatterns: ['.eslintrc.js'],
+  ignorePatterns: ['.eslintrc.cjs'],
   globals: {},
   rules: {
     'n/no-missing-import': 'off',

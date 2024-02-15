@@ -1,6 +1,5 @@
-module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-recess-order'],
-  plugins: [],
+/** @type {import('stylelint').Config} */
+export default {
   rules: {
     'at-rule-no-unknown': [
       true,
@@ -8,12 +7,16 @@ module.exports = {
         ignoreAtRules: ['tailwind', 'layer', 'apply', 'variants', 'responsive', 'screen'],
       },
     ],
-    'no-empty-source': null,
   },
+  extends: ['stylelint-config-standard', 'stylelint-config-recess-order'],
+  plugins: [],
   overrides: [
     {
       files: ['**/*.scss'],
       extends: ['stylelint-config-standard-scss', 'stylelint-config-prettier-scss'],
     },
   ],
+  allowEmptyInput: true,
+  cache: true,
+  fix: true,
 }
