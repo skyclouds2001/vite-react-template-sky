@@ -1982,7 +1982,7 @@ packages:
       '@csstools/css-color-parser': 1.5.1(@csstools/css-parser-algorithms@2.5.0)(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-parser-algorithms': 2.5.0(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-tokenizer': 2.2.3
-      '@csstools/postcss-progressive-custom-properties': 3.0.3(postcss@8.4.34)
+      '@csstools/postcss-progressive-custom-properties': 3.1.0(postcss@8.4.34)
       postcss: 8.4.34
     dev: true
 
@@ -1995,7 +1995,7 @@ packages:
       '@csstools/css-color-parser': 1.5.1(@csstools/css-parser-algorithms@2.5.0)(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-parser-algorithms': 2.5.0(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-tokenizer': 2.2.3
-      '@csstools/postcss-progressive-custom-properties': 3.0.3(postcss@8.4.34)
+      '@csstools/postcss-progressive-custom-properties': 3.1.0(postcss@8.4.34)
       postcss: 8.4.34
     dev: true
 
@@ -2042,7 +2042,7 @@ packages:
       '@csstools/css-color-parser': 1.5.1(@csstools/css-parser-algorithms@2.5.0)(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-parser-algorithms': 2.5.0(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-tokenizer': 2.2.3
-      '@csstools/postcss-progressive-custom-properties': 3.0.3(postcss@8.4.34)
+      '@csstools/postcss-progressive-custom-properties': 3.1.0(postcss@8.4.34)
       postcss: 8.4.34
     dev: true
 
@@ -2064,7 +2064,7 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/postcss-progressive-custom-properties': 3.0.3(postcss@8.4.34)
+      '@csstools/postcss-progressive-custom-properties': 3.1.0(postcss@8.4.34)
       postcss: 8.4.34
       postcss-value-parser: 4.2.0
     dev: true
@@ -2190,12 +2190,12 @@ packages:
       '@csstools/css-color-parser': 1.5.1(@csstools/css-parser-algorithms@2.5.0)(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-parser-algorithms': 2.5.0(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-tokenizer': 2.2.3
-      '@csstools/postcss-progressive-custom-properties': 3.0.3(postcss@8.4.34)
+      '@csstools/postcss-progressive-custom-properties': 3.1.0(postcss@8.4.34)
       postcss: 8.4.34
     dev: true
 
-  /@csstools/postcss-progressive-custom-properties@3.0.3(postcss@8.4.34):
-    resolution: {integrity: sha512-WipTVh6JTMQfeIrzDV4wEPsV9NTzMK2jwXxyH6CGBktuWdivHnkioP/smp1x/0QDPQyx7NTS14RB+GV3zZZYEw==}
+  /@csstools/postcss-progressive-custom-properties@3.1.0(postcss@8.4.34):
+    resolution: {integrity: sha512-Mfb1T1BHa6pktLI+poMEHI7Q+VYvAsdwJZPFsSkIB2ZUsawCiPxXLw06BKSVPITxFlaY/FEUzfpyOTfX9YCE2w==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
@@ -2213,7 +2213,7 @@ packages:
       '@csstools/css-color-parser': 1.5.1(@csstools/css-parser-algorithms@2.5.0)(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-parser-algorithms': 2.5.0(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-tokenizer': 2.2.3
-      '@csstools/postcss-progressive-custom-properties': 3.0.3(postcss@8.4.34)
+      '@csstools/postcss-progressive-custom-properties': 3.1.0(postcss@8.4.34)
       postcss: 8.4.34
     dev: true
 
@@ -7979,7 +7979,7 @@ packages:
       '@csstools/css-color-parser': 1.5.1(@csstools/css-parser-algorithms@2.5.0)(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-parser-algorithms': 2.5.0(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-tokenizer': 2.2.3
-      '@csstools/postcss-progressive-custom-properties': 3.0.3(postcss@8.4.34)
+      '@csstools/postcss-progressive-custom-properties': 3.1.0(postcss@8.4.34)
       postcss: 8.4.34
     dev: true
 
@@ -8118,7 +8118,7 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/postcss-progressive-custom-properties': 3.0.3(postcss@8.4.34)
+      '@csstools/postcss-progressive-custom-properties': 3.1.0(postcss@8.4.34)
       postcss: 8.4.34
       postcss-value-parser: 4.2.0
     dev: true
@@ -8213,7 +8213,7 @@ packages:
       '@csstools/css-color-parser': 1.5.1(@csstools/css-parser-algorithms@2.5.0)(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-parser-algorithms': 2.5.0(@csstools/css-tokenizer@2.2.3)
       '@csstools/css-tokenizer': 2.2.3
-      '@csstools/postcss-progressive-custom-properties': 3.0.3(postcss@8.4.34)
+      '@csstools/postcss-progressive-custom-properties': 3.1.0(postcss@8.4.34)
       postcss: 8.4.34
     dev: true
 
@@ -8502,7 +8502,7 @@ packages:
       '@csstools/postcss-nested-calc': 3.0.1(postcss@8.4.34)
       '@csstools/postcss-normalize-display-values': 3.0.2(postcss@8.4.34)
       '@csstools/postcss-oklab-function': 3.0.9(postcss@8.4.34)
-      '@csstools/postcss-progressive-custom-properties': 3.0.3(postcss@8.4.34)
+      '@csstools/postcss-progressive-custom-properties': 3.1.0(postcss@8.4.34)
       '@csstools/postcss-relative-color-syntax': 2.0.9(postcss@8.4.34)
       '@csstools/postcss-scope-pseudo-class': 3.0.1(postcss@8.4.34)
       '@csstools/postcss-stepped-value-functions': 3.0.4(postcss@8.4.34)
@@ -11462,6 +11462,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
