@@ -229,9 +229,6 @@ devDependencies:
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.1
-  terser:
-    specifier: ^5.28.1
-    version: 5.28.1
   typescript:
     specifier: ^5.3.3
     version: 5.3.3
