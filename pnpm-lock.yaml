@@ -218,8 +218,8 @@ devDependencies:
     specifier: ^1.0.0
     version: 1.0.0(stylelint@16.2.1)
   stylelint-config-recess-order:
-    specifier: ^4.6.0
-    version: 4.6.0(stylelint@16.2.1)
+    specifier: ^5.0.0
+    version: 5.0.0(stylelint@16.2.1)
   stylelint-config-standard:
     specifier: ^36.0.0
     version: 36.0.0(stylelint@16.2.1)
@@ -1853,6 +1853,7 @@ packages:
   /@commitlint/resolve-extends@19.0.2:
     resolution: {integrity: sha512-yCdY4+JZpKPwnR6/YZAs9Ukpr3oqHbjYmwszEH2djYjprczg8j2okIeZyNM4dzD6+BqlSu/y0Eou2vE+wP+KnA==}
     engines: {node: '>=v18'}
+    requiresBuild: true
     dependencies:
       '@commitlint/config-validator': 19.0.0
       '@commitlint/types': 19.0.0
@@ -4725,6 +4726,7 @@ packages:
   /cosmiconfig-typescript-loader@5.0.0(@types/node@20.11.21)(cosmiconfig@8.3.6)(typescript@5.3.3):
     resolution: {integrity: sha512-+8cK7jRAReYkMwMiG+bxhcNKiHJDM6bR9FD/nGBXOWdMLuYawjF5cGrtLilJ+LGd3ZjCXnJjR5DkfWPoIVlqJA==}
     engines: {node: '>=v16'}
+    requiresBuild: true
     peerDependencies:
       '@types/node': '*'
       cosmiconfig: '>=8.2'
@@ -4739,6 +4741,7 @@ packages:
   /cosmiconfig@8.3.6(typescript@5.3.3):
     resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
     engines: {node: '>=14'}
+    requiresBuild: true
     peerDependencies:
       typescript: '>=4.9.5'
     peerDependenciesMeta:
@@ -7462,6 +7465,7 @@ packages:
 
   /lodash.mergewith@4.6.2:
     resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
+    requiresBuild: true
     dev: true
 
   /lodash.snakecase@4.1.1:
@@ -10611,10 +10615,10 @@ packages:
       stylelint: 16.2.1(typescript@5.3.3)
     dev: true
 
-  /stylelint-config-recess-order@4.6.0(stylelint@16.2.1):
-    resolution: {integrity: sha512-V76fhv3YtcNXh/hyAuAdSzi5FmcrG54Mp2AThJ3D/PTMTSYzUPd7GIhP6z9mTqnRhmkk6YTfcu/JWB8h+Yrcaw==}
+  /stylelint-config-recess-order@5.0.0(stylelint@16.2.1):
+    resolution: {integrity: sha512-D+/Got844O96No2mj/H2NhLjj555iKAy/Mea+JCerfKB9TBKQW3/IudSVkTCxE4QiRDLldfH15x6FH1D1Anjhw==}
     peerDependencies:
-      stylelint: '>=15'
+      stylelint: '>=16'
     dependencies:
       stylelint: 16.2.1(typescript@5.3.3)
       stylelint-order: 6.0.4(stylelint@16.2.1)
@@ -11807,6 +11811,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
