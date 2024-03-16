@@ -79,7 +79,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.3.3",
     "@reduxjs/toolkit": "^2.2.1",
-    "antd": "^5.15.2",
+    "antd": "^5.15.3",
     "axios": "^1.6.8",
     "dayjs": "^1.11.10",
     "lodash-es": "^4.17.21",

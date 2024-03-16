@@ -12,8 +12,8 @@ dependencies:
     specifier: ^2.2.1
     version: 2.2.1(react-redux@9.1.0)(react@18.2.0)
   antd:
-    specifier: ^5.15.2
-    version: 5.15.2(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^5.15.3
+    version: 5.15.3(react-dom@18.2.0)(react@18.2.0)
   axios:
     specifier: ^1.6.8
     version: 1.6.8
@@ -3951,8 +3951,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /antd@5.15.2(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-EByEiCQknPKJVYfD+zneXwEvjdFzvMw8CZrsxw9nq19ftC4uMcMkZ2irasW7RQQGg9i7XsAZpAwYz3anuFX+EA==}
+  /antd@5.15.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-53dpdGbfwipHVbqITmppp8N16i+BscMzz8NUNwaJgxwSvO9VQh/NfC/90lqGq3I2oBmxQ8TzRIxzFVKD/9OhlQ==}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
@@ -11913,6 +11913,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
