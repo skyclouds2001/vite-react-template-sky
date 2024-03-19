@@ -873,8 +873,8 @@ packages:
       '@babel/helper-remap-async-to-generator': 7.22.20(@babel/core@7.24.0)
     dev: true
 
-  /@babel/plugin-transform-block-scoped-functions@7.23.3(@babel/core@7.24.0):
-    resolution: {integrity: sha512-vI+0sIaPIO6CNuM9Kk5VmXcMVRiOpDh7w2zZt9GXzmE/9KD70CUEVhvPR/etAeNK/FAEkhxQtXOzVF3EuRL41A==}
+  /@babel/plugin-transform-block-scoped-functions@7.24.1(@babel/core@7.24.0):
+    resolution: {integrity: sha512-TWWC18OShZutrv9C6mye1xwtam+uNi2bnTOCBUd5sZxyHOiWbU6ztSROofIMrK84uweEZC219POICK/sTYwfgg==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -1426,7 +1426,7 @@ packages:
       '@babel/plugin-transform-arrow-functions': 7.23.3(@babel/core@7.24.0)
       '@babel/plugin-transform-async-generator-functions': 7.23.9(@babel/core@7.24.0)
       '@babel/plugin-transform-async-to-generator': 7.23.3(@babel/core@7.24.0)
-      '@babel/plugin-transform-block-scoped-functions': 7.23.3(@babel/core@7.24.0)
+      '@babel/plugin-transform-block-scoped-functions': 7.24.1(@babel/core@7.24.0)
       '@babel/plugin-transform-block-scoping': 7.23.4(@babel/core@7.24.0)
       '@babel/plugin-transform-class-properties': 7.23.3(@babel/core@7.24.0)
       '@babel/plugin-transform-class-static-block': 7.23.4(@babel/core@7.24.0)
@@ -11913,6 +11913,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
