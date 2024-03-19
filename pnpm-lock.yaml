@@ -554,6 +554,18 @@ packages:
       '@babel/helper-optimise-call-expression': 7.22.5
     dev: true
 
+  /@babel/helper-replace-supers@7.24.1(@babel/core@7.24.0):
+    resolution: {integrity: sha512-QCR1UqC9BzG5vZl8BMicmZ28RuUBnHhAMddD8yHFHDRH9lLTZ9uUPehX8ctVPT8l0TKblJidqcgUUKGVrePleQ==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+    dependencies:
+      '@babel/core': 7.24.0
+      '@babel/helper-environment-visitor': 7.22.20
+      '@babel/helper-member-expression-to-functions': 7.23.0
+      '@babel/helper-optimise-call-expression': 7.22.5
+    dev: true
+
   /@babel/helper-simple-access@7.22.5:
     resolution: {integrity: sha512-n0H99E/K+Bika3++WNL17POvo4rKWZ7lZEp1Q+fStVbUi8nxPQEBOlTmCOxW/0JsS56SKKQ+ojAe2pHKJHN35w==}
     engines: {node: '>=6.9.0'}
@@ -1177,15 +1189,15 @@ packages:
       '@babel/plugin-transform-parameters': 7.23.3(@babel/core@7.24.0)
     dev: true
 
-  /@babel/plugin-transform-object-super@7.23.3(@babel/core@7.24.0):
-    resolution: {integrity: sha512-BwQ8q0x2JG+3lxCVFohg+KbQM7plfpBwThdW9A6TMtWwLsbDA01Ek2Zb/AgDN39BiZsExm4qrXxjk+P1/fzGrA==}
+  /@babel/plugin-transform-object-super@7.24.1(@babel/core@7.24.0):
+    resolution: {integrity: sha512-oKJqR3TeI5hSLRxudMjFQ9re9fBVUU0GICqM3J1mi8MqlhVr6hC/ZN4ttAyMuQR6EZZIY6h/exe5swqGNNIkWQ==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.24.0
       '@babel/helper-plugin-utils': 7.24.0
-      '@babel/helper-replace-supers': 7.22.20(@babel/core@7.24.0)
+      '@babel/helper-replace-supers': 7.24.1(@babel/core@7.24.0)
     dev: true
 
   /@babel/plugin-transform-optional-catch-binding@7.23.4(@babel/core@7.24.0):
@@ -1453,7 +1465,7 @@ packages:
       '@babel/plugin-transform-nullish-coalescing-operator': 7.23.4(@babel/core@7.24.0)
       '@babel/plugin-transform-numeric-separator': 7.23.4(@babel/core@7.24.0)
       '@babel/plugin-transform-object-rest-spread': 7.24.0(@babel/core@7.24.0)
-      '@babel/plugin-transform-object-super': 7.23.3(@babel/core@7.24.0)
+      '@babel/plugin-transform-object-super': 7.24.1(@babel/core@7.24.0)
       '@babel/plugin-transform-optional-catch-binding': 7.23.4(@babel/core@7.24.0)
       '@babel/plugin-transform-optional-chaining': 7.23.4(@babel/core@7.24.0)
       '@babel/plugin-transform-parameters': 7.23.3(@babel/core@7.24.0)
@@ -11913,6 +11925,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
