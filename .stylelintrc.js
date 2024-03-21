@@ -10,12 +10,7 @@ export default {
   },
   extends: ['stylelint-config-standard', 'stylelint-config-recess-order'],
   plugins: [],
-  overrides: [
-    {
-      files: ['**/*.scss'],
-      extends: ['stylelint-config-standard-scss', 'stylelint-config-prettier-scss'],
-    },
-  ],
+  overrides: [],
   allowEmptyInput: true,
   cache: true,
   fix: true,
