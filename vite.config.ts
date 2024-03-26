@@ -36,9 +36,9 @@ export default defineConfig({
       eslint: {
         lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx}"',
       },
-      // stylelint: {
-      //   lintCommand: 'stylelint "./src/**/*.{css,scss}"',
-      // },
+      stylelint: {
+        lintCommand: 'stylelint "./src/**/*.{css}"',
+      },
     }),
     visualizer() as unknown as Plugin,
   ],

@@ -4,7 +4,7 @@ import { PlusOutlined } from '@ant-design/icons'
 import { Icon } from '@iconify/react'
 import { Main } from '@/components'
 import { updateCounter, type AppDispatch, type RootState } from '@/store'
-import styles from './index.module.scss'
+import styles from './index.module.css'
 
 const Home: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>()
