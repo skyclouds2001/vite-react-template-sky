@@ -5,7 +5,7 @@ import aspectRatio from '@tailwindcss/aspect-ratio'
 import containerQueries from '@tailwindcss/container-queries'
 
 export default {
-  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
+  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {},
   },
