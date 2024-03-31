@@ -2,6 +2,7 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+[![npm](https://img.shields.io/npm/v/@sky-fly/vite-template.svg)](https://www.npmjs.com/package/@sky-fly/vite-template)
 [![wakatime](https://wakatime.com/badge/user/bfadeccb-56c3-4aa2-abb0-89cf5f9b89be/project/044a2450-7035-45c6-a7b5-966578a05777.svg)](https://wakatime.com/badge/user/bfadeccb-56c3-4aa2-abb0-89cf5f9b89be/project/044a2450-7035-45c6-a7b5-966578a05777)
 [![ci](https://github.com/skyclouds2001/vite-react-template-sky/actions/workflows/ci.yml/badge.svg)](https://github.com/skyclouds2001/vite-react-template-sky/actions/workflows/ci.yml)
 
