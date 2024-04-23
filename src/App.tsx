@@ -7,7 +7,7 @@ import { locale } from 'dayjs'
 import 'dayjs/locale/zh-cn'
 import { Provider } from 'react-redux'
 import Routes from '@/router'
-import store from '@/store'
+import store from '@/stores'
 
 locale('zh-cn')
 
