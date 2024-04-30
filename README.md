@@ -42,6 +42,8 @@
 
 ![Node Current](https://img.shields.io/node/v/%40sky-fly%2Fvite-template)
 [![ci](https://github.com/skyclouds2001/vite-react-template-sky/actions/workflows/ci.yml/badge.svg)](https://github.com/skyclouds2001/vite-react-template-sky/actions/workflows/ci.yml)
+[![labeler](https://github.com/skyclouds2001/vite-react-template-sky/actions/workflows/labeler.yml/badge.svg)](https://github.com/skyclouds2001/vite-react-template-sky/actions/workflows/labeler.yml)
+[![stale](https://github.com/skyclouds2001/vite-react-template-sky/actions/workflows/stale.yml/badge.svg)](https://github.com/skyclouds2001/vite-react-template-sky/actions/workflows/stale.yml)
 [![wakatime](https://wakatime.com/badge/user/bfadeccb-56c3-4aa2-abb0-89cf5f9b89be/project/044a2450-7035-45c6-a7b5-966578a05777.svg)](https://wakatime.com/badge/user/bfadeccb-56c3-4aa2-abb0-89cf5f9b89be/project/044a2450-7035-45c6-a7b5-966578a05777)
 
 An opinionated vite starter template for React.
@@ -58,7 +60,6 @@ An opinionated vite starter template for React.
 - [Dayjs](https://day.js.org/) for Date support
 - [Lodash-es](https://lodash.com/) for providing tool methods
 - PWA support via [vite-plugin-pwa](https://vite-pwa-org.netlify.app/)
-- Mock support using [mockjs](http://mockjs.com/) and vite-plugin-mock
 - Using [pnpm](https://pnpm.io/) as the package manager and using only-allow to limit package manager
 - [Postcss](https://postcss.org/) for transform styles
 - [Husky](https://typicode.github.io/husky/) and lint-staged for run lint when commits
