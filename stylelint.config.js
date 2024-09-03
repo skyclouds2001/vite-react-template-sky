@@ -10,8 +10,11 @@ export default {
   },
   extends: ['stylelint-config-standard', 'stylelint-config-recess-order'],
   plugins: [],
-  overrides: [],
+  reportDescriptionlessDisables: true,
+  reportInvalidScopeDisables: true,
+  reportNeedlessDisables: true,
   allowEmptyInput: true,
   cache: true,
   fix: true,
+  overrides: [],
 }
