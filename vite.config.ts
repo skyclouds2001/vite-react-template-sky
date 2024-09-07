@@ -33,6 +33,7 @@ export default defineConfig({
       typescript: true,
       eslint: {
         lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx}"',
+        useFlatConfig: true,
       },
       stylelint: {
         lintCommand: 'stylelint "./src/**/*.{css}"',
