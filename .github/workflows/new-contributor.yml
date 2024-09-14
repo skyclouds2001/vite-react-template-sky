@@ -18,7 +18,7 @@ permissions:
 jobs:
   new-contributor:
     name: Welcom new contributor
-    if: github.repository == 'skyclouds2001/springboot-template-sky'
+    if: github.repository == 'skyclouds2001/vite-react-template-sky'
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
