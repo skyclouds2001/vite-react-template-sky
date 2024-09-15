@@ -3,5 +3,5 @@ import { test, expect } from '@playwright/test'
 test('has title', async ({ page }) => {
   await page.goto('http://localhost:5173/')
 
-  await expect(page).toHaveTitle('Vite-React-Template-Sky')
+  await expect(page).toHaveTitle('vite-react-template-sky')
 })
