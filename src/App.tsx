@@ -1,12 +1,12 @@
-import React, { useLayoutEffect } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
+import React, { Suspense, useLayoutEffect } from 'react'
+import { RouterProvider } from 'react-router-dom'
 import { ConfigProvider, App as Apps } from 'antd'
 import zhCN from 'antd/es/locale/zh_CN'
 import 'antd/dist/reset.css'
 import { locale } from 'dayjs'
 import 'dayjs/locale/zh-cn'
 import { Provider } from 'react-redux'
-import Routes from '@/router'
+import router from '@/router'
 import store from '@/stores'
 
 locale('zh-cn')
@@ -26,9 +26,9 @@ const App: React.FC = () => {
     <ConfigProvider locale={zhCN}>
       <Apps>
         <Provider store={store}>
-          <Router>
-            <Routes />
-          </Router>
+          <Suspense>
+            <RouterProvider router={router} />
+          </Suspense>
         </Provider>
       </Apps>
     </ConfigProvider>
@@ -36,3 +36,7 @@ const App: React.FC = () => {
 }
 
 export default App
+
+if (import.meta.hot) {
+  import.meta.hot.dispose(() => router.dispose())
+}
