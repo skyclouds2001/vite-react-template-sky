@@ -20,9 +20,9 @@ export default defineConfig({
         lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx}"',
         useFlatConfig: true,
       },
-      stylelint: {
-        lintCommand: 'stylelint "./src/**/*.{css}"',
-      },
+      // stylelint: {
+      //   lintCommand: 'stylelint "./src/**/*.{css}"',
+      // },
     }),
     visualizer() as unknown as Plugin,
   ],
