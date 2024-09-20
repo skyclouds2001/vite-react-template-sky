@@ -6,6 +6,7 @@ import 'antd/dist/reset.css'
 import { locale } from 'dayjs'
 import 'dayjs/locale/zh-cn'
 import { Provider } from 'react-redux'
+import '@/i18n'
 import router from '@/router'
 import store from '@/stores'
 
