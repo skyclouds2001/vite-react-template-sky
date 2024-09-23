@@ -10,14 +10,12 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "paths": {
-      "~": ["."],
       "~/*": ["./*"],
-      "@": ["./src"],
       "@/*": ["./src/*"]
     },
     "resolveJsonModule": true,
     "rootDir": ".",
-    "types": ["vite/client"],
+    "types": ["vite/client", "vitest/jsdom"],
 
     "newLine": "lf",
     "noEmit": true,
@@ -25,7 +23,7 @@
     "removeComments": true,
     "sourceMap": true,
 
-    "allowJs": false,
+    "allowJs": true,
 
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -43,8 +41,8 @@
 
     "skipLibCheck": true
   },
-  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "dist"],
+  "include": ["src/**/*", "tests/**/*", "src/**/*.json"],
+  "exclude": ["node_modules/**/*", "dist/**/*"],
   "references": [
     {
       "path": "./tsconfig.node.json"

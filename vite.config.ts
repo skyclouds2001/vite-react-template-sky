@@ -12,22 +12,7 @@ export default defineConfig({
     legacy(),
     pwa({
       registerType: 'autoUpdate',
-      manifest: {
-        start_url: '/',
-        icons: [
-          {
-            src: '/android-chrome-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
-        lang: 'zh-CN',
-      },
+      manifest: false,
     }),
     checker({
       typescript: true,
@@ -35,15 +20,15 @@ export default defineConfig({
         lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx}"',
         useFlatConfig: true,
       },
-      stylelint: {
-        lintCommand: 'stylelint "./src/**/*.{css}"',
-      },
+      // stylelint: {
+      //   lintCommand: 'stylelint "./src/**/*.{css}"',
+      // },
     }),
     visualizer() as unknown as Plugin,
   ],
   resolve: {
     alias: {
-      '~': __dirname,
+      '~': path.resolve(__dirname, '.'),
       '@': path.resolve(__dirname, 'src'),
     },
   },

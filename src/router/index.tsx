@@ -1,19 +1,10 @@
-import React, { lazy } from 'react'
-import { useRoutes } from 'react-router-dom'
+import { createBrowserRouter } from 'react-router-dom'
 
-const Home = lazy(() => import('@/views/home'))
+const router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
+  {
+    path: '/',
+    lazy: () => import('@/views/home').then((component) => ({ Component: component.default })),
+  },
+])
 
-const Router: React.FC = () => {
-  return useRoutes([
-    {
-      path: '/',
-      element: (
-        <React.Suspense>
-          <Home />
-        </React.Suspense>
-      ),
-    },
-  ])
-}
-
-export default Router
+export default router

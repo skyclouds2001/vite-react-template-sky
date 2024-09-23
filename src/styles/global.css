@@ -13,15 +13,15 @@
   background-color: #242424;
 }
 
+#root {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #fff;
   }
-}
-
-#root {
-  padding: 0;
-  margin: 0 auto;
-  text-align: center;
 }
