@@ -8,7 +8,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/skyclouds2001/vite-react-template-sky)
 ![GitHub Release Date](https://img.shields.io/github/release-date/skyclouds2001/vite-react-template-sky)
 ![GitHub language count](https://img.shields.io/github/languages/count/skyclouds2001/vite-react-template-sky)
-![GitHub top language](https://img.shields.io/github/languages/top/skyclouds2001/vite-vue-template-sky)
+![GitHub top language](https://img.shields.io/github/languages/top/skyclouds2001/vite-react-template-sky)
 [![npm](https://img.shields.io/npm/v/%40sky-fly%2Fvite-template)](https://www.npmjs.com/package/%40sky-fly%2Fvite-template)
 ![NPM Collaborators](https://img.shields.io/npm/collaborators/%40sky-fly%2Fvite-template)
 ![npms.io](https://img.shields.io/npms-io/final-score/%40sky-fly%2Fvite-template)
@@ -39,7 +39,7 @@
 ![NPM Downloads](https://img.shields.io/npm/dy/%40sky-fly%2Fvite-template)
 ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hy/%40sky-fly%2Fvite-template)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/skyclouds2001/vite-react-template-sky)
-![GitHub contributors from allcontributors.org](https://img.shields.io/github/all-contributors/skyclouds2001/vite-vue-template-sky)
+![GitHub contributors from allcontributors.org](https://img.shields.io/github/all-contributors/skyclouds2001/vite-react-template-sky)
 
 ![Node Current](https://img.shields.io/node/v/%40sky-fly%2Fvite-template)
 [![ci](https://github.com/skyclouds2001/vite-react-template-sky/actions/workflows/ci.yml/badge.svg)](https://github.com/skyclouds2001/vite-react-template-sky/actions/workflows/ci.yml)
