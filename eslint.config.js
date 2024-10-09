@@ -6,7 +6,7 @@ import reactPlugin from 'eslint-plugin-react'
 // import reactHooksPlugin from 'eslint-plugin-react-hooks'
 import nodePlugin from 'eslint-plugin-n'
 import promisePlugin from 'eslint-plugin-promise'
-// import importPlugin from 'eslint-plugin-import'
+import importPlugin from 'eslint-plugin-import'
 import jsdocPlugin from 'eslint-plugin-jsdoc'
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 import vitestPlugin from 'eslint-plugin-vitest'
@@ -22,9 +22,9 @@ export default [
   nodePlugin.configs['flat/recommended'],
   promisePlugin.configs['flat/recommended'],
   // reactHooksPlugin.configs.recommended,
-  // importPlugin.flatConfigs.recommended,
-  // importPlugin.flatConfigs.react,
-  // importPlugin.flatConfigs.typescript,
+  importPlugin.flatConfigs.recommended,
+  importPlugin.flatConfigs.react,
+  importPlugin.flatConfigs.typescript,
   jsdocPlugin.configs['flat/recommended-typescript'],
   jsxA11yPlugin.flatConfigs.recommended,
   prettierConfig,

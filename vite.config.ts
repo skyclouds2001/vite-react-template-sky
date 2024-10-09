@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 import legacy from '@vitejs/plugin-legacy'
 import { VitePWA as pwa } from 'vite-plugin-pwa'
 import { visualizer } from 'rollup-plugin-visualizer'
-import checker from 'vite-plugin-checker'
+import { checker } from 'vite-plugin-checker'
 
 export default defineConfig({
   plugins: [
