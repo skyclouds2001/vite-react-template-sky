@@ -1,6 +1,6 @@
 import js from '@eslint/js'
 import globals from 'globals'
-// import standardConfig  from 'eslint-config-standard'
+import standardConfig from 'eslint-config-standard'
 import prettierConfig from 'eslint-config-prettier'
 import reactPlugin from 'eslint-plugin-react'
 // import reactHooksPlugin from 'eslint-plugin-react-hooks'
@@ -27,7 +27,6 @@ export default [
   importPlugin.flatConfigs.typescript,
   jsdocPlugin.configs['flat/recommended-typescript'],
   jsxA11yPlugin.flatConfigs.recommended,
-  prettierConfig,
   {
     name: 'custom',
     files: ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
@@ -58,7 +57,7 @@ export default [
     },
     plugins: {},
     rules: {
-      // ...standardConfig.rules,
+      ...standardConfig.rules,
       'n/no-missing-import': 'off',
       'n/no-missing-require': 'off',
     },
@@ -101,4 +100,9 @@ export default [
     files: ['**/tests/e2e/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
     ...playwrightPlugin.configs['flat/recommended'],
   },
+  {
+    name: 'custom-ignore',
+    ignores: ['node_modules/**', 'dist/**', '.{idea,fleet,vscode,git}/**', '*.config.*'],
+  },
+  prettierConfig,
 ]
