@@ -1,10 +1,12 @@
-import { type Plugin, defineConfig } from 'vite'
 import path from 'node:path'
+import { type Plugin, defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import legacy from '@vitejs/plugin-legacy'
 import { VitePWA as pwa } from 'vite-plugin-pwa'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { checker } from 'vite-plugin-checker'
+
+const env = loadEnv(process.env.NODE_ENV ?? 'development', '.')
 
 export default defineConfig({
   plugins: [
@@ -40,14 +42,14 @@ export default defineConfig({
     stringify: true,
   },
   server: {
-    host: '0.0.0.0',
-    port: 5173,
+    host: env.VITE_DEV_SERVER_HOST ?? 'localhost',
+    port: Number.parseInt(env.VITE_DEV_SERVER_PORT) ?? 5173,
     strictPort: true,
     open: true,
   },
   preview: {
-    host: '0.0.0.0',
-    port: 4173,
+    host: env.VITE_PREVIEW_SERVER_HOST ?? 'localhost',
+    port: Number.parseInt(env.VITE_PREVIEW_SERVER_PORT) ?? 4173,
     strictPort: true,
     open: true,
   },

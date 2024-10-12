@@ -6,7 +6,8 @@
   "keywords": [
     "template",
     "vite",
-    "react"
+    "react",
+    "typescript"
   ],
   "repository": {
     "type": "git",
