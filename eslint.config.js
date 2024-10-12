@@ -19,6 +19,7 @@ export default [
   ...typescript.configs.recommended,
   ...typescript.configs.stylistic,
   reactPlugin.configs.flat.recommended,
+  reactPlugin.configs.flat['jsx-runtime'],
   nodePlugin.configs['flat/recommended'],
   promisePlugin.configs['flat/recommended'],
   // reactHooksPlugin.configs.recommended,
