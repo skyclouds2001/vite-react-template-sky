@@ -31,7 +31,8 @@
 
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
     "lib": ["ESNext", "DOM", "DOM.Iterable", "WebWorker", "WebWorker.ImportScripts", "Webworker.Iterable"],
     "target": "ESNext",
     "useDefineForClassFields": false,

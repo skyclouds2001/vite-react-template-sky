@@ -1,16 +1,16 @@
 import js from '@eslint/js'
 import globals from 'globals'
-// import standardConfig  from 'eslint-config-standard'
+import standardConfig from 'eslint-config-standard'
 import prettierConfig from 'eslint-config-prettier'
 import reactPlugin from 'eslint-plugin-react'
 // import reactHooksPlugin from 'eslint-plugin-react-hooks'
 import nodePlugin from 'eslint-plugin-n'
 import promisePlugin from 'eslint-plugin-promise'
-// import importPlugin from 'eslint-plugin-import'
+import importPlugin from 'eslint-plugin-import'
 import jsdocPlugin from 'eslint-plugin-jsdoc'
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 import vitestPlugin from 'eslint-plugin-vitest'
-// import playwrightPlugin from 'eslint-plugin-playwright'
+import playwrightPlugin from 'eslint-plugin-playwright'
 // import testingLibraryPlugin from 'eslint-plugin-testing-library'
 import typescript from 'typescript-eslint'
 
@@ -19,15 +19,15 @@ export default [
   ...typescript.configs.recommended,
   ...typescript.configs.stylistic,
   reactPlugin.configs.flat.recommended,
+  reactPlugin.configs.flat['jsx-runtime'],
   nodePlugin.configs['flat/recommended'],
   promisePlugin.configs['flat/recommended'],
   // reactHooksPlugin.configs.recommended,
-  // importPlugin.flatConfigs.recommended,
-  // importPlugin.flatConfigs.react,
-  // importPlugin.flatConfigs.typescript,
+  importPlugin.flatConfigs.recommended,
+  importPlugin.flatConfigs.react,
+  importPlugin.flatConfigs.typescript,
   jsdocPlugin.configs['flat/recommended-typescript'],
   jsxA11yPlugin.flatConfigs.recommended,
-  prettierConfig,
   {
     name: 'custom',
     files: ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
@@ -58,7 +58,7 @@ export default [
     },
     plugins: {},
     rules: {
-      // ...standardConfig.rules,
+      ...standardConfig.rules,
       'n/no-missing-import': 'off',
       'n/no-missing-require': 'off',
     },
@@ -99,6 +99,11 @@ export default [
   {
     name: 'custom-test-e2e',
     files: ['**/tests/e2e/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
-    // ...playwrightPlugin.configs.recommended,
+    ...playwrightPlugin.configs['flat/recommended'],
   },
+  {
+    name: 'custom-ignore',
+    ignores: ['node_modules/**', 'dist/**', '.{idea,fleet,vscode,git}/**', '*.config.*'],
+  },
+  prettierConfig,
 ]
