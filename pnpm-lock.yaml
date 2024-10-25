@@ -198,9 +198,6 @@ importers:
       only-allow:
         specifier: ^1.2.1
         version: 1.2.1
-      pnpm:
-        specifier: 9.12.1
-        version: 9.12.1
       postcss-import:
         specifier: ^16.1.0
         version: 16.1.0(postcss@8.4.47)
@@ -4877,11 +4874,6 @@ packages:
   playwright@1.48.0:
     resolution: {integrity: sha512-qPqFaMEHuY/ug8o0uteYJSRfMGFikhUysk8ZvAtfKmUK3kc/6oNl/y3EczF8OFGYIi/Ex2HspMfzYArk6+XQSA==}
     engines: {node: '>=18'}
-    hasBin: true
-
-  pnpm@9.12.1:
-    resolution: {integrity: sha512-5aflKkGDoC1ZMQV/eg2/+dXpzjFh4z+miuOSElt5KCqKikcKUd/IoO2GIhRC6y+1cBmwmQ7ST6tRm/DhvFzPxA==}
-    engines: {node: '>=18.12'}
     hasBin: true
 
   possible-typed-array-names@1.0.0:
@@ -12187,8 +12179,6 @@ snapshots:
       playwright-core: 1.48.0
     optionalDependencies:
       fsevents: 2.3.2
-
-  pnpm@9.12.1: {}
 
   possible-typed-array-names@1.0.0: {}
 
