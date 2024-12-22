@@ -1,5 +1,21 @@
 # vite-react-template-sky
 
+## 1.7.0
+
+### Minor Changes
+
+- [`38e96c8`](https://github.com/skyclouds2001/vite-react-template-sky/commit/38e96c8d53a2fe69d896ee173b98d9570e6a8098) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: update version limit
+
+### Patch Changes
+
+- [`b86d5e5`](https://github.com/skyclouds2001/vite-react-template-sky/commit/b86d5e5e1bec151250e8b9abd75671582a891743) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: allow lint-staged pass empty commit
+
+- [`4418500`](https://github.com/skyclouds2001/vite-react-template-sky/commit/4418500f8ac1e5dde235f1559589ee8f22b51ee6) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: update json stringify config
+
+- [`b315c1a`](https://github.com/skyclouds2001/vite-react-template-sky/commit/b315c1a6dab19f8017c930b0f1c001c2fca754ad) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: remove useless jsconfig.json file
+
+- [`4418500`](https://github.com/skyclouds2001/vite-react-template-sky/commit/4418500f8ac1e5dde235f1559589ee8f22b51ee6) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: update css preprocessor worker config
+
 ## 1.6.0
 
 ### Patch Changes
