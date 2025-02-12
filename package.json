@@ -138,6 +138,6 @@
     "vite": "^6.0.11",
     "vite-plugin-checker": "^0.8.0",
     "vite-plugin-pwa": "^0.21.1",
-    "vitest": "^3.0.4"
+    "vitest": "^3.0.5"
   }
 }
