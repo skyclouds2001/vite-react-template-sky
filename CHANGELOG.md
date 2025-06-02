@@ -1,5 +1,27 @@
 # vite-react-template-sky
 
+## 1.8.0
+
+### Minor Changes
+
+- [#1168](https://github.com/skyclouds2001/vite-react-template-sky/pull/1168) [`037c4cd`](https://github.com/skyclouds2001/vite-react-template-sky/commit/037c4cdf75eea289ed0523c0ae108ec8dc578058) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: update eslint config
+
+- [#1166](https://github.com/skyclouds2001/vite-react-template-sky/pull/1166) [`e3c4549`](https://github.com/skyclouds2001/vite-react-template-sky/commit/e3c4549760382584f43d06e149798fc405c1fb2c) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: update prettier config
+
+### Patch Changes
+
+- [#1162](https://github.com/skyclouds2001/vite-react-template-sky/pull/1162) [`1531fac`](https://github.com/skyclouds2001/vite-react-template-sky/commit/1531fac863e6ef177653c03f193ef9a8f6311b83) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: simplify eslint-import-resolver-typescript plugin config
+
+- [#1136](https://github.com/skyclouds2001/vite-react-template-sky/pull/1136) [`792ed47`](https://github.com/skyclouds2001/vite-react-template-sky/commit/792ed47ca514d857ea235aa75b71be53599d2cc5) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - ci: remove useless permission
+
+- [#1167](https://github.com/skyclouds2001/vite-react-template-sky/pull/1167) [`b707aa5`](https://github.com/skyclouds2001/vite-react-template-sky/commit/b707aa54e19ad5b694435fe21d8da05a54ad9dd3) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: use eslint helper function
+
+- [#1167](https://github.com/skyclouds2001/vite-react-template-sky/pull/1167) [`70ea9e4`](https://github.com/skyclouds2001/vite-react-template-sky/commit/70ea9e4691fe838b40396bfcafdc222539838cbb) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: use global ignore helper function
+
+- [#1136](https://github.com/skyclouds2001/vite-react-template-sky/pull/1136) [`5340c3f`](https://github.com/skyclouds2001/vite-react-template-sky/commit/5340c3f06de23147b9d8f627abecbe1a5402b762) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: add codeowners file
+
+- [#1180](https://github.com/skyclouds2001/vite-react-template-sky/pull/1180) [`bb78ad0`](https://github.com/skyclouds2001/vite-react-template-sky/commit/bb78ad07afed7399263ec9d950c022543ea274c9) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: update dependabot config
+
 ## 1.7.0
 
 ### Minor Changes
